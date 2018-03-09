@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Route, Switch } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 
@@ -6,7 +7,6 @@ import './App.css';
 import Header from "./components/Navigation/Header/Header";
 import Footer from "./components/Navigation/Footer/Footer";
 import Home from "./containers/Home/Home";
-import SoftwareEngineers from "./containers/SoftwareEngineers/SoftwareEngineers";
 
 export default class App extends Component {
   render() {
@@ -15,7 +15,6 @@ export default class App extends Component {
         <Header />
         
         <Switch>
-          <Route path="/software-engineers" component={ SoftwareEngineers } />
           <Route path="/" exact component={ Home } />
         </Switch>
 
