@@ -10,7 +10,7 @@ const obHeader = () => {
               <div className="row">
                 {/* start logo */}
                 <div className="col-md-2 col-xs-5">
-                    <a href="index.html" title="Pofo" className="logo"><img src="images/logo.png" data-at2x="images/logo@2x.png" className="logo-dark" alt="Pofo" /><img src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo" className="logo-light default" /></a>
+                    <a href="index.html" title="Pofo" className="logo"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo@2x.png" className="logo-dark" alt="Pofo" /><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white@2x.png" alt="Pofo" className="logo-light default" /></a>
                 </div>
                 {/* end logo */}
                 <div className="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right">
@@ -239,10 +239,10 @@ const obHeader = () => {
                                             {/* start sub menu item */}
                                             <ul>
                                                 <li>
-                                                    <a href="home-creative-studio.html" className="menu-banner-image"><img src="images/menu-banner-01.png" alt="portfolio"/></a>
+                                                    <a href="home-creative-studio.html" className="menu-banner-image"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/menu-banner-01.png" alt="portfolio"/></a>
                                                 </li>
                                                 <li>
-                                                    <a href="home-creative-business.html" className="menu-banner-image"><img src="images/menu-banner-02.png" alt="portfolio"/></a>
+                                                    <a href="home-creative-business.html" className="menu-banner-image"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/menu-banner-02.png" alt="portfolio"/></a>
                                                 </li>
                                             </ul>
                                             {/* end sub menu item */}

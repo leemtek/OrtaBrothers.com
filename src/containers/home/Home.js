@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../../App.css';
+import "./home.css";
 
 import Hero from "./Sections/Hero";
 

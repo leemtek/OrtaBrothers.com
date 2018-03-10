@@ -16,7 +16,7 @@ const obFooter = () => {
                   {/* start logo */}
                   <div className="col-md-4 col-sm-2 col-xs-12 text-center display-table xs-margin-10px-bottom">
                       <div className="display-table-cell vertical-align-middle">
-                          <a href="index.html"><img className="footer-logo" src="images/logo-white.png" data-at2x="images/logo-white@2x.png" alt="Pofo" /></a>
+                          <a href="index.html"><img className="footer-logo" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white@2x.png" alt="Pofo" /></a>
                       </div>
                   </div>
                   {/* end logo */}
