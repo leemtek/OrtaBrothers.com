@@ -7,6 +7,7 @@ import './App.css';
 import Header from "./components/Navigation/Header/Header";
 import Footer from "./components/Navigation/Footer/Footer";
 import Home from "./containers/Home/Home";
+import Services from "./containers/Services/Services";
 
 export default class App extends Component {
   render() {
@@ -15,6 +16,7 @@ export default class App extends Component {
         <Header />
         
         <Switch>
+          <Route path="/services" exact component={ Services } />
           <Route path="/" exact component={ Home } />
         </Switch>
 
