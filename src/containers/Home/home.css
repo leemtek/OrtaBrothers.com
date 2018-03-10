@@ -1,0 +1,14 @@
+/* ============================================================
+  # Slider Revolution
+  Fixes are needed due to possible conflict with React.
+============================================================ */
+/* Small Title */
+.tp-caption.NotGeneric-Title, .NotGeneric-Title {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+/* Bigger Title */
+.tp-caption.NotGeneric-SubTitle, .NotGeneric-SubTitle {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
