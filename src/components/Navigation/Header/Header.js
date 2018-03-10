@@ -33,10 +33,10 @@ const obHeader = () => {
                                 <a href="/services">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                             </li>
                             
-                            <li className="dropdown simple-dropdown"><a href="javascript:void(0);" title="Blog">About</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                            <li className="dropdown simple-dropdown"><a href="/about/orta-brothers" title="About">About</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Orta Brothers</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/about/orta-brothers">Orta Brothers</a></li>
                                     <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">FAQs</a></li>
                                 </ul>
                                 {/* end sub menu */}

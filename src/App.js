@@ -8,6 +8,7 @@ import Header from "./components/Navigation/Header/Header";
 import Footer from "./components/Navigation/Footer/Footer";
 import Home from "./containers/Home/Home";
 import Services from "./containers/Services/Services";
+import OrtaBrothers from "./containers/About/OrtaBrothers/OrtaBrothers";
 
 export default class App extends Component {
   render() {
@@ -16,7 +17,8 @@ export default class App extends Component {
         <Header />
         
         <Switch>
-          <Route path="/services" exact component={ Services } />
+        <Route path="/about/orta-brothers" component={ OrtaBrothers } />
+          <Route path="/services" component={ Services } />
           <Route path="/" exact component={ Home } />
         </Switch>
 
