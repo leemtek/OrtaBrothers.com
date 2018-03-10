@@ -42,11 +42,11 @@ const obHeader = () => {
                                 {/* end sub menu */}
                             </li>
 
-                            <li className="dropdown simple-dropdown"><a href="javascript:void(0);" title="Blog">Contact Us</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                            <li className="dropdown simple-dropdown"><a href="/contact" title="Contact Us">Contact Us</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Contact Info</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">Request Quote</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/contact">Contact Info</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/contact/quote">Request Quote</a></li>
                                 </ul>
                                 {/* end sub menu */}
                             </li>
