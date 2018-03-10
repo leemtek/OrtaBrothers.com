@@ -11,7 +11,7 @@ const obHeader = () => {
               <div className="row">
                 {/* start logo */}
                 <div className="col-md-2 col-xs-5">
-                    <a href="index.html" title="Pofo" className="logo"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo@2x.png" className="logo-dark" alt="Pofo" /><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white@2x.png" alt="Pofo" className="logo-light default" /></a>
+                    <a href="index.html" title="Pofo" className="logo"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo@2x.png" className="logo-dark" alt="Pofo" /><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo@2x.png" alt="Pofo" className="logo-light default" /></a>
                 </div>
                 {/* end logo */}
                 <div className="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right">
@@ -30,7 +30,7 @@ const obHeader = () => {
                             
                             {/* end menu item */}
                             <li className="dropdown">
-                                <Link to="/services">Services</Link><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                <a href="/services">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                             </li>
                             
                             <li className="dropdown simple-dropdown"><a href="javascript:void(0);" title="Blog">About</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
