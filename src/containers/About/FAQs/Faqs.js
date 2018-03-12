@@ -50,8 +50,8 @@ const faqs = () => {
 
                   {/* start feature box item */}
                   <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
-                      <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Which carpet cleaning method you use?</a>
-                      <p className="width-95 sm-width-100">We use the Hot Water Extraction Method also known as "steam cleaning"; this process is used by about 80% of all carpet cleaning companies. This system provides the best capability for cleaning and is the only cleaning method classified as "deep cleaning". All the others are considered "light surface cleaning" because they are incapable of removing soil deep in the pile. Most major carpet manufacturers recommend hot water extraction as the preferred method of cleaning</p>
+                      <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Which carpet cleaning method do you use?</a>
+                      <p className="width-95 sm-width-100">We use the Hot Water Extraction Method also known as "steam cleaning"; this process is used by about 80% of all carpet cleaning companies. This system provides the best capability for cleaning and is the only cleaning method classified as "deep cleaning". All the others are considered "light surface cleaning" because they are incapable of removing soil deep in the pile. Most major carpet manufacturers recommend hot water extraction as the preferred method of cleaning.</p>
                       <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                   </div>
                   {/* end feature box item */}
@@ -65,6 +65,7 @@ const faqs = () => {
                   {/* end feature box item */}
 
               </div>
+
               <div className="row">
 
                   {/* start feature box item */}
@@ -86,7 +87,7 @@ const faqs = () => {
                   {/* start feature box item */}
                   <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
                       <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Do you clean apartments?</a>
-                      <p className="width-95 sm-width-100">Yes, we use a high powered portable unit to clean apartments or areas where our truck mount equipment can’t reach. Our technician will need access to a water source (water tap) and a disposal area (the proper recommended disposal area is a bathroom toilet)</p>
+                      <p className="width-95 sm-width-100">Yes, we use a high powered portable unit to clean apartments or areas where our truck mount equipment can’t reach. Our technician will need access to a water source (water tap) and a disposal area (the proper recommended disposal area is a bathroom toilet).</p>
                       <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                   </div>
                   {/* end feature box item */}
@@ -126,7 +127,7 @@ const faqs = () => {
                 {/* start feature box item */}
                 <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
                     <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Do you match competitor prices?</a>
-                    <p className="width-95 sm-width-100">Many carpet cleaning companies have a bad reputation for “bait & switch”, offering a low price to get you to book an appointment. Once they are at your home they add on extra fees for pre-vacuuming, pre-spraying, waste water handling, travel, fuel, etc. The customer ends up with a bill that is several times the original advertised amount.. Our technicians will always tell you what needs to be done and how much it will cost before he start the job, so you know what to expect</p>
+                    <p className="width-95 sm-width-100">Many carpet cleaning companies have a bad reputation for “bait & switch”, offering a low price to get you to book an appointment. Once they are at your home they add on extra fees for pre-vacuuming, pre-spraying, waste water handling, travel, fuel, etc. The customer ends up with a bill that is several times the original advertised amount. Our technicians will always tell you what needs to be done and how much it will cost before he start the job, so you know what to expect.</p>
                     <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                 </div>
                 {/* end feature box item */}
