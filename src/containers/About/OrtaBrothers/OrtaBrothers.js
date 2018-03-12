@@ -46,7 +46,7 @@ const ortabrothers = () => {
                           <a href="services-modern.html"><img src="http://placehold.it/750x500" alt=""/></a>
                       </div>
                       <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">E-Commerce Solutions</a>
-                      <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                      <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry&#39;s standard dummy text.</p>
                       <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                       <a href="services-modern.html" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View E-Commerce Solutions <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                   </div>
@@ -57,7 +57,7 @@ const ortabrothers = () => {
                           <a href="services-modern.html"><img src="http://placehold.it/750x500" alt=""/></a>
                       </div>
                       <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Web Development</a>
-                      <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                      <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry&#39;s standard dummy text.</p>
                       <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                       <a href="services-modern.html" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Web Development <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                   </div>
@@ -68,7 +68,7 @@ const ortabrothers = () => {
                           <a href="services-modern.html"><img src="http://placehold.it/750x500" alt=""/></a>
                       </div>
                       <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Marketing Strategy</a>
-                      <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                      <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry&#39;s standard dummy text.</p>
                       <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                       <a href="services-modern.html" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Marketing Strategy <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                   </div>
