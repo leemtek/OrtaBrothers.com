@@ -1,0 +1,19 @@
+.gFormRow .gFormCellText {
+  padding-right: 60px;
+  text-align: left;
+  line-height: 18px;;
+}
+
+.gFormRow .gFormCellElement {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+}
+.gFormRow .gFormCellText label {
+  display: block;
+  text-align: left;
+}
+.gFormRow .gFormCellText small {
+  font-weight: normal;
+}
