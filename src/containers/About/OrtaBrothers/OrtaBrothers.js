@@ -26,11 +26,11 @@ const ortabrothers = () => {
                         <div class="display-table width-100 height-100">
                             <div class="display-table-cell vertical-align-middle">
                                 <i class="fa fa-quote-left text-deep-pink icon-medium margin-15px-bottom"></i>
-                                <h5 class="text-extra-dark-gray alt-font text-uppercase font-weight-700">Design is not just what it looks like and feels like. Design is how it works.</h5>
-                                <p class="width-90 sm-width-100">Pofo philosophy that great design can only be delivered by people with a deep social and cultural understanding of the communities they designing. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever...</p>
+                                <h5 class="text-extra-dark-gray alt-font text-uppercase font-weight-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+                                <p class="width-90 sm-width-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices mattis nulla nec pulvinar. Proin venenatis consectetur turpis. Vestibulum vulputate arcu ipsum, ut aliquam arcu porttitor ac. Suspendisse consequat nulla ac mauris aliquet, viverra viverra urna vehicula. Suspendisse consequat nulla ac mauris aliquet, viverra viverra urna vehicula.</p>
                                 <img src="images/signature-dark.png" alt="" class="margin-15px-top"/>
-                                <span class="text-extra-dark-gray text-large display-block margin-30px-top alt-font font-weight-600">Colin Smith</span>
-                                <span class="display-block">From the chairman&#39;s desk</span>
+                                <span class="text-extra-dark-gray text-large display-block margin-30px-top alt-font font-weight-600">John Smith</span>
+                                <span class="display-block">From the president&#39;s desk</span>
                             </div>
                         </div>
                     </div>
