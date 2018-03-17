@@ -14,17 +14,6 @@ const faqs = () => {
                       {/* end page title */}
                     </div>
                   </div>
-                  <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 display-table text-right xs-text-left xs-margin-10px-top">
-                    <div className="display-table-cell vertical-align-middle breadcrumb text-small alt-font">
-                      {/* start breadcrumb */}
-                      <ul className="xs-text-center">
-                          <li><a href="/" className="text-dark-gray"><i className="fa fa-home"></i></a></li>
-                          <li className="text-dark-gray">About</li>
-                          <li className="text-dark-gray">FAQs</li>
-                      </ul>
-                      {/* end breadcrumb */}
-                    </div>
-                  </div>
               </div>
           </div>
       </section>
