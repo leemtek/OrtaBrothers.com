@@ -46,7 +46,7 @@ const ortabrothers = () => {
         </section>
         {/* end president message section */}
 
-        {/* start section */}
+        {/* start history section */}
         <section class="wow fadeIn">
             <div class="container">
                 <div class="row">
@@ -61,7 +61,7 @@ const ortabrothers = () => {
                 </div>
             </div>
         </section>
-        {/* end section */}
+        {/* end history section */}
 
         {/* start testimonial section */}
         <section class="wow fadeIn animated bg-light-gray testimonial-style3">

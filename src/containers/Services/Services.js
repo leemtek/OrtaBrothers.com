@@ -23,13 +23,50 @@ const services = () => {
         </section>
         {/* end page title section */}
 
-        {/* start carpet cleaning section */}
+        {/* start carpet section */}
+        <section class="no-padding wow fadeIn bg-light-gray">
+            <div class="container-fluid">
+                <div class="row equalize sm-equalize-auto">
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 cover-background sm-height-500px xs-height-350px wow fadeInLeft" style ={ { backgroundImage: "url('http://placehold.it/960x668')" } }><div class="xs-height-400px"></div></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
+                        <div class="padding-ten-all pull-left md-padding-ten-all sm-no-padding-lr xs-padding-50px-tb xs-no-padding-lr">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-four-bottom sm-margin-40px-bottom xs-margin-30px-bottom xs-no-padding-lr">
+                                <h5 class="alt-font text-extra-dark-gray sm-text-center sm-width-70 sm-margin-lr-auto xs-width-100 text-uppercase font-weight-700 sm-no-margin-bottom">Carpet Cleaning</h5>
+                            </div>
+                            <div class="col-2-nth xs-text-center">
+                                {/* start feature box item */}
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-six-bottom md-no-padding-right md-margin-30px-bottom xs-margin-30px-bottom xs-no-padding last-paragraph-no-margin">
+                                    <div class="text-extra-dark-gray margin-10px-bottom alt-font"><span class="text-deep-pink margin-10px-right xs-display-block xs-no-margin">01.</span>Pre-Spray/Hot Water Extraction</div>
+                                    <p class="width-90 xs-width-100">This is the preferred method of cleaning by most carpet manufactures. We apply a pre-treatment to break down soils, loosen oil deposits and remove spots to the carpet. We then agitated the fibers with a carpet rack. A cleaning solution is then injected into the carpet pile and immediately extracted with our powerful truck-mount system. The carpet is left with no detergent residue  feeling softer, cleaner and brighter.</p>
+                                </div>
+                                {/* end feature box item */}
+                                {/* start feature box item */}
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-six-bottom md-no-padding-right md-margin-30px-bottom xs-margin-30px-bottom xs-no-padding last-paragraph-no-margin">
+                                    <div class="text-extra-dark-gray margin-10px-bottom alt-font"><span class="text-deep-pink margin-10px-right xs-display-block xs-no-margin">02.</span>Carpet Protection</div>
+                                    <p class="width-90 xs-width-100">A great way to keep the carpet cleaner for longer, is to have it treated with carpet protection. All carpet when manufactured has a protective coating applied. Eventually this wears away and it&#39;s left with no repellent. As your carpet starts to age, you lose protection due to the break down of the repellent. We recommend to have carpet protection reapplied after having your carpets professionally cleaned. It will repel wet and dry soils. We apply this through a pressurized water line after the cleaning is completely finished. 
+</p>
+                                </div>
+                                {/* end feature box item */}
+                                {/* start feature box item */}
+                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-six-bottom md-no-padding-right md-margin-30px-bottom xs-margin-30px-bottom xs-no-padding last-paragraph-no-margin">
+                                    <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Learn More</a>
+                                </div>
+                                {/* end feature box item */}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        {/* end carpet section */}
+
+        {/* start upholstery section */}
         <section>
             <div class="container">
                 <div class="row">
                     <div class="row text-center">
                         <div class="col-lg-6 col-md-6 col-sm-8 col-xs-12 center-col sm-margin-40px-bottom xs-margin-30px-bottom text-center last-paragraph-no-margin">
-                            <h5 class="alt-font text-uppercase text-extra-dark-gray font-weight-700">Upholstery Cleaning</h5>
+                            <h5 class="alt-font text-extra-dark-gray sm-text-center sm-width-70 sm-margin-lr-auto xs-width-100 text-uppercase font-weight-700 sm-no-margin-bottom">Upholstery Cleaning</h5>
                         </div>
                     </div>
 
@@ -79,15 +116,42 @@ const services = () => {
                             <div class="separator-line-horrizontal-medium-light margin-30px-top sm-no-margin-top bg-deep-pink"></div>
                         </div>
                         {/* end service item */}
+
+                        {/* start service item */}
+                        <div class="col-md-4 col-sm-12 col-xs-12 sm-margin-40px-bottom xs-margin-30px-bottom wow fadeInUp">
+                            <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Learn More</a>
+                        </div>
+                        {/* end service item */}
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        {/* end upholstery section */}
+
+        {/* start tile section */}
+        <section class="wow fadeIn">
+            <div class="container">
+                <div class="row equalize sm-equalize-auto">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 display-table sm-margin-30px-bottom wow fadeInLeft">
+                        <div class="display-table-cell vertical-align-middle">
+                            <img src="http://placehold.it/1480x1197" class="width-100" alt="" />
+                        </div>
                     </div>
 
-
-
+                    <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 display-table col-lg-offset-1 wow fadeInRight">
+                        <div class="display-table-cell vertical-align-middle">
+                            <h5 class="alt-font text-extra-dark-gray sm-text-center sm-width-70 sm-margin-lr-auto xs-width-100 text-uppercase font-weight-700 sm-no-margin-bottom">Tile & Grout Cleaning</h5>
+                            <p class="width-90 xs-width-100">First, all of the surfaces are cleaned and prepared. Then, our Tile Cleaning and Grout Cleaning solution is sprayed on the surface. Using a high-speed floor machine with a specially formulated grout cleaning attachment, heavily soiled areas are then cleaned. A grout brush is also used to get into those hard to reach areas. After the excess solution is cleaned away, the floor is buffed with a commercial buffer. Finally, a grout sealer is applied which will help maintain that fresh, new look!</p> 
+                            <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Learn More</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </section>
-        {/* end carpet cleaning section */}
+        {/* end tile section */}
     </div>
   );
 }
