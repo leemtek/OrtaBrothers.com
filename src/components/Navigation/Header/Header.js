@@ -27,12 +27,18 @@ const obHeader = () => {
                             <li className="dropdown">
                                 <a href="/">Home</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                             </li>
-                            
+
                             {/* end menu item */}
-                            <li className="dropdown">
-                                <a href="/services">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                            <li className="dropdown simple-dropdown"><a href="/services" title="Services">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                {/* start sub menu */}
+                                <ul className="dropdown-menu" role="menu">
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services">General</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/carpet">Carpet</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/tilegrout">Tile & Group</a></li>
+                                </ul>
+                                {/* end sub menu */}
                             </li>
-                            
+
                             <li className="dropdown simple-dropdown"><a href="/about/orta-brothers" title="About">About</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
@@ -68,7 +74,7 @@ const obHeader = () => {
                     <div className="header-social-icon xs-display-none">
                         <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a>
                         <a href="https://twitter.com/" title="Twitter" target="_blank"><i className="fa fa-twitter"></i></a>
-                        <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i className="fa fa-dribbble"></i></a>                          
+                        <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i className="fa fa-dribbble"></i></a>
                     </div>
                 </div>
               </div>
