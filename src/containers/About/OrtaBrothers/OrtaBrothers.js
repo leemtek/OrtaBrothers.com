@@ -67,94 +67,104 @@ const ortabrothers = () => {
         <section class="wow fadeIn animated bg-light-gray testimonial-style3">
             <div class="container">
                 <div class="row">
-                    <div class="sm-width-60 sm-center-col xs-width-100">
 
-                        {/* start testimonial item */}
-                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3">
-                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
-                            </div>
-                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
-                                <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end testimonial item */}
-                        {/* start testimonial item */}
-                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
-                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
-                            </div>
-                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
-                                <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end testimonial item */}
-                        {/* start testimonial item */}
-                        <div class="col-md-4 wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
-                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
-                            </div>
-                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
-                                <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end testimonial item */}
-                        {/* start testimonial item */}
-                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3">
-                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
-                            </div>
-                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
-                                <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end testimonial item */}
-                        {/* start testimonial item */}
-                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
-                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
-                            </div>
-                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
-                                <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end testimonial item */}
-                        {/* start testimonial item */}
-                        <div class="col-md-4 wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
-                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
-                            </div>
-                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
-                                <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
-                                </div>
-                            </div>
-                        </div>
-                        {/* end testimonial item */}
-
+                    {/* start testimonial title */}
+                    <div class="center-col col-md-6 col-sm-12 sm-margin-30px-bottom sm-padding-80px-lr xs-padding-15px-lr sm-text-center wow fadeIn">
+                        <h5 class="text-center alt-font font-weight-700 text-extra-dark-gray text-uppercase width-100">In our clients own words</h5>
+                        <div class="center-col separator-line-verticle-extra-small bg-extra-dark-gray width-100 sm-width-70 margin-30px-bottom sm-margin-20px-bottom"></div>
                     </div>
+                    {/* end testimonial title */}
+
+                    <div class="sm-width-60 sm-center-col xs-width-100">
+                        {/* start testimonial item */}
+                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3">
+                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
+                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
+                            </div>
+                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
+                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="name-box padding-20px-left">
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
+                                    <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* end testimonial item */}
+                        {/* start testimonial item */}
+                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
+                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
+                                This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
+                            </div>
+                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
+                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="name-box padding-20px-left">
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
+                                    <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* end testimonial item */}
+                        {/* start testimonial item */}
+                        <div class="col-md-4 wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
+                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
+                                Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
+                            </div>
+                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
+                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="name-box padding-20px-left">
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
+                                    <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* end testimonial item */}
+                    </div>
+
+                    <div class="sm-width-60 sm-center-col xs-width-100">
+                        {/* start testimonial item */}
+                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3">
+                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
+                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
+                            </div>
+                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
+                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="name-box padding-20px-left">
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
+                                    <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* end testimonial item */}
+                        {/* start testimonial item */}
+                        <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
+                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
+                                This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
+                            </div>
+                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
+                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="name-box padding-20px-left">
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
+                                    <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* end testimonial item */}
+                        {/* start testimonial item */}
+                        <div class="col-md-4 wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
+                            <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
+                                Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
+                            </div>
+                            <div class="testimonial-box padding-25px-all xs-padding-20px-all">
+                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="name-box padding-20px-left">
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
+                                    <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                        {/* end testimonial item */}
+                    </div>
+
                 </div>
             </div>
         </section>
