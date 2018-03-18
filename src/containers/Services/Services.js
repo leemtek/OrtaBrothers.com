@@ -119,7 +119,7 @@ const services = () => {
 
                         {/* start service item */}
                         <div class="col-md-4 col-sm-12 col-xs-12 sm-margin-40px-bottom xs-margin-30px-bottom wow fadeInUp">
-                            <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Learn More</a>
+                            <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
                         </div>
                         {/* end service item */}
 
@@ -130,7 +130,7 @@ const services = () => {
         {/* end upholstery section */}
 
         {/* start tile section */}
-        <section class="wow fadeIn">
+        <section class="wow fadeIn bg-light-gray">
             <div class="container">
                 <div class="row equalize sm-equalize-auto">
 

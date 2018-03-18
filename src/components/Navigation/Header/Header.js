@@ -34,7 +34,7 @@ const obHeader = () => {
                                 <ul className="dropdown-menu" role="menu">
                                     <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services">General</a></li>
                                     <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/carpet">Carpet</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/tilegrout">Tile & Group</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/tilegrout">Tile & Grout</a></li>
                                 </ul>
                                 {/* end sub menu */}
                             </li>
