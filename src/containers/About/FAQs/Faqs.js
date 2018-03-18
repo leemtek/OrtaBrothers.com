@@ -3,24 +3,9 @@ import React from "react";
 const faqs = () => {
   return (
     <div>
-      {/* start page title section */}
-      <section className="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
-          <div className="container">
-              <div className="row equalize xs-equalize-auto">
-                  <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12 display-table">
-                    <div className="display-table-cell vertical-align-middle text-left xs-text-center">
-                      {/* start page title */}
-                      <h1 className="alt-font text-extra-dark-gray font-weight-600 no-margin-bottom text-uppercase">Frequently Asked Questions</h1>
-                      {/* end page title */}
-                    </div>
-                  </div>
-              </div>
-          </div>
-      </section>
-      {/* end page title section */}
 
       {/* start feature box section */}
-      <section className="wow fadeIn">
+      <section className="wow fadeIn bg-light-gray">
           <div className="container">
               <div className="row">
                   <div className="col-lg-7 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
