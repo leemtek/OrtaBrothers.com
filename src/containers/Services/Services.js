@@ -49,7 +49,7 @@ const services = () => {
                                 {/* end feature box item */}
                                 {/* start feature box item */}
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-six-bottom md-no-padding-right md-margin-30px-bottom xs-margin-30px-bottom xs-no-padding last-paragraph-no-margin">
-                                    <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Learn More</a>
+                                    <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
                                 </div>
                                 {/* end feature box item */}
                             </div>
@@ -144,7 +144,7 @@ const services = () => {
                         <div class="display-table-cell vertical-align-middle">
                             <h5 class="alt-font text-extra-dark-gray sm-text-center sm-width-70 sm-margin-lr-auto xs-width-100 text-uppercase font-weight-700 sm-no-margin-bottom">Tile & Grout Cleaning</h5>
                             <p class="width-90 xs-width-100">First, all of the surfaces are cleaned and prepared. Then, our Tile Cleaning and Grout Cleaning solution is sprayed on the surface. Using a high-speed floor machine with a specially formulated grout cleaning attachment, heavily soiled areas are then cleaned. A grout brush is also used to get into those hard to reach areas. After the excess solution is cleaned away, the floor is buffed with a commercial buffer. Finally, a grout sealer is applied which will help maintain that fresh, new look!</p> 
-                            <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Learn More</a>
+                            <a href="#" class="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i class="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
                         </div>
                     </div>
 

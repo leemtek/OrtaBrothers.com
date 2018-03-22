@@ -8,8 +8,6 @@ import Header from "./components/Navigation/Header/Header";
 import Footer from "./components/Navigation/Footer/Footer";
 import Home from "./containers/Home/Home";
 import Services from "./containers/Services/Services";
-import Carpet from "./containers/Services/Carpet/Carpet";
-import TileGrout from "./containers/Services/TileGrout/TileGrout";
 import OrtaBrothers from "./containers/About/OrtaBrothers/OrtaBrothers";
 import Faqs from "./containers/About/FAQs/Faqs";
 import Contact from "./containers/Contact/Contact";
@@ -28,8 +26,6 @@ export default class App extends Component {
           <Route path="/about/orta-brothers" exact component={ OrtaBrothers } />
           <Route path="/about/faqs" exact component={ Faqs } />
           <Route path="/services" exact component={ Services } />
-          <Route path="/services/carpet" exact component={ Carpet } />
-          <Route path="/services/tilegrout" exact component={ TileGrout } />
           <Route path="/contact" exact component={ Contact } />
             <Route path="/contact/quote" exact component={ Quote } />
           <Route path="/" exact component={ Home } />

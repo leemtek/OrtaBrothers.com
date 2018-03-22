@@ -27,17 +27,13 @@ const obHeader = () => {
                             <li className="dropdown">
                                 <a href="/">Home</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                             </li>
-
                             {/* end menu item */}
-                            <li className="dropdown simple-dropdown"><a href="/services" title="Services">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
-                                {/* start sub menu */}
-                                <ul className="dropdown-menu" role="menu">
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services">General</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/carpet">Carpet</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/tilegrout">Tile & Grout</a></li>
-                                </ul>
-                                {/* end sub menu */}
+
+                            {/* start menu item */}
+                            <li className="dropdown">
+                                <a href="/services">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                             </li>
+                            {/* end menu item */}
 
                             <li className="dropdown simple-dropdown"><a href="/about/orta-brothers" title="About">About</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                 {/* start sub menu */}
