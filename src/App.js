@@ -18,7 +18,7 @@ export default class App extends Component {
     return (
       <div id="wrapper">
         <Header />
-        
+
         {/* ============================================================
           Handles the routing of the website.
         ============================================================ */}
@@ -36,4 +36,3 @@ export default class App extends Component {
     );
   } // render()
 } // App
-
