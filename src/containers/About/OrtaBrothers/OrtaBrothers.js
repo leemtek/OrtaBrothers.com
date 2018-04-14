@@ -1,11 +1,13 @@
 import React from "react";
+import history from '../../../about-history.jpeg';
+import shake from '../../../about-shake.jpeg';
 
 const ortabrothers = () => {
   return (
     <div>
 
         {/* start section */}
-        <section class="extra-big-section parallax wow fadeIn" data-stellar-background-ratio="0.5" style ={ { backgroundImage: "url('http://placehold.it/1920x1150')" } }>
+        <section class="extra-big-section parallax wow fadeIn" data-stellar-background-ratio="0.5" style ={ { backgroundImage: `url(${require('../../../about-parallax.jpg')})` } }>
             <div class="opacity-full-dark bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row">
@@ -56,7 +58,7 @@ const ortabrothers = () => {
                         <p class="width-95 md-width-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices mattis nulla nec pulvinar. Proin venenatis consectetur turpis. Vestibulum vulputate arcu ipsum, ut aliquam arcu porttitor ac. Suspendisse consequat nulla ac mauris aliquet, viverra viverra urna vehicula. Proin aliquet erat erat, nec pretium augue tempor nec. Phasellus molestie pellentesque commodo. Curabitur faucibus lobortis ipsum, eu interdum tortor pulvinar aliquam. Aliquam ut lectus pulvinar, ullamcorper nibh at, convallis ipsum. Nam quis tincidunt orci. Cras ex quam, commodo id tellus et, ultricies vulputate mauris. Nunc efficitur mi eu dolor commodo, vel vestibulum mi fringilla. Nulla condimentum diam ut turpis hendrerit blandit. Sed tortor sem, auctor eget sollicitudin nec, condimentum mollis dolor. Nulla laoreet fringilla molestie.</p>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
-                        <img src="http://placehold.it/800x811" alt=""/>
+                        <img src={history} alt=""/>
                     </div>
                 </div>
             </div>
@@ -177,7 +179,7 @@ const ortabrothers = () => {
                     <div class="col-md-5 col-sm-12 col-xs-12 text-center sm-margin-30px-bottom wow fadeInLeft">
                         <div class="display-table width-100 height-100">
                             <div class="display-table-cell vertical-align-middle width-100 height-100">
-                                <img src="http://placehold.it/900x650" alt="" class="border-radius-6 width-100" />
+                                <img src={shake} alt="" class="border-radius-6 width-100" />
                             </div>
                         </div>
                     </div>

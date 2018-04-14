@@ -1,10 +1,12 @@
 import React from "react";
+import upholstery from '../../services-upholstery.jpeg';
+import tile from '../../services-tile.jpg';
 
 const services = () => {
   return (
     <div>
         {/* start page title section */}
-        <section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style ={ { backgroundImage: "url('http://placehold.it/1920x1100')" } }>
+        <section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style ={ { backgroundImage: `url(${require('../../services-hero.jpeg')})` } }>
             <div class="opacity-medium bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row">
@@ -27,7 +29,7 @@ const services = () => {
         <section class="no-padding wow fadeIn bg-light-gray">
             <div class="container-fluid">
                 <div class="row equalize sm-equalize-auto">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 cover-background sm-height-500px xs-height-350px wow fadeInLeft" style ={ { backgroundImage: "url('http://placehold.it/960x668')" } }><div class="xs-height-400px"></div></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 cover-background sm-height-500px xs-height-350px wow fadeInLeft" style ={ { backgroundImage: `url(${require('../../services-carpet.jpeg')})` } }><div class="xs-height-400px"></div></div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
                         <div class="padding-ten-all pull-left md-padding-ten-all sm-no-padding-lr xs-padding-50px-tb xs-no-padding-lr">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-four-bottom sm-margin-40px-bottom xs-margin-30px-bottom xs-no-padding-lr">
@@ -70,7 +72,7 @@ const services = () => {
                         </div>
                     </div>
 
-                    <div class="col-md-12 margin-60px-bottom xs-margin-30px-bottom wow fadeIn"><img src="http://placehold.it/1600x639" alt=""/></div>
+                    <div class="col-md-12 margin-60px-bottom xs-margin-30px-bottom wow fadeIn"><img src={upholstery} alt=""/></div>
 
                     {/* row 1 */}
                     <div className="row margin-40px-bottom margin-20px-lr">
@@ -136,7 +138,7 @@ const services = () => {
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 display-table sm-margin-30px-bottom wow fadeInLeft">
                         <div class="display-table-cell vertical-align-middle">
-                            <img src="http://placehold.it/1480x1197" class="width-100" alt="" />
+                            <img src={tile} class="width-100" alt="" />
                         </div>
                     </div>
 
