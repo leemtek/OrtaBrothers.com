@@ -1,10 +1,10 @@
 import React from "react";
 
-const services = () => {
+const residential = () => {
   return (
     <div>
         {/* start page title section */}
-        <section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style ={ { backgroundImage: "url('http://placehold.it/1920x1100')" } }>
+        <section class="wow fadeIn parallax" data-stellar-background-ratio="0.5" style ={ { backgroundImage: "url('https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/hero-services.jpg')" } }>
             <div class="opacity-medium bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row">
@@ -27,7 +27,7 @@ const services = () => {
         <section class="no-padding wow fadeIn bg-light-gray">
             <div class="container-fluid">
                 <div class="row equalize sm-equalize-auto">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 cover-background sm-height-500px xs-height-350px wow fadeInLeft" style ={ { backgroundImage: "url('http://placehold.it/960x668')" } }><div class="xs-height-400px"></div></div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 cover-background sm-height-500px xs-height-350px wow fadeInLeft" style ={ { backgroundImage: "url('https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/services-carpet-cleaning.jpg')" } }><div class="xs-height-400px"></div></div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 wow fadeInRight">
                         <div class="padding-ten-all pull-left md-padding-ten-all sm-no-padding-lr xs-padding-50px-tb xs-no-padding-lr">
                             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-four-bottom sm-margin-40px-bottom xs-margin-30px-bottom xs-no-padding-lr">
@@ -37,14 +37,13 @@ const services = () => {
                                 {/* start feature box item */}
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-six-bottom md-no-padding-right md-margin-30px-bottom xs-margin-30px-bottom xs-no-padding last-paragraph-no-margin">
                                     <div class="text-extra-dark-gray margin-10px-bottom alt-font"><span class="text-deep-pink margin-10px-right xs-display-block xs-no-margin">01.</span>Pre-Spray/Hot Water Extraction</div>
-                                    <p class="width-90 xs-width-100">This is the preferred method of cleaning by most carpet manufactures. We apply a pre-treatment to break down soils, loosen oil deposits and remove spots to the carpet. We then agitated the fibers with a carpet rack. A cleaning solution is then injected into the carpet pile and immediately extracted with our powerful truck-mount system. The carpet is left with no detergent residue  feeling softer, cleaner and brighter.</p>
+                                    <p class="width-90 xs-width-100">This is the preferred method of cleaning by most carpet manufactures. We apply a pre-treatment to break down soils, loosen oil deposits and remove spots to the carpet. We then agitated the fibers with a carpet rake. A cleaning solution is then injected into the carpet pile and immediately extracted with our powerful truck-mount system. The carpet is left with no detergent residue  feeling softer, cleaner and brighter.</p>
                                 </div>
                                 {/* end feature box item */}
                                 {/* start feature box item */}
                                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-six-bottom md-no-padding-right md-margin-30px-bottom xs-margin-30px-bottom xs-no-padding last-paragraph-no-margin">
                                     <div class="text-extra-dark-gray margin-10px-bottom alt-font"><span class="text-deep-pink margin-10px-right xs-display-block xs-no-margin">02.</span>Carpet Protection</div>
-                                    <p class="width-90 xs-width-100">A great way to keep the carpet cleaner for longer, is to have it treated with carpet protection. All carpet when manufactured has a protective coating applied. Eventually this wears away and it&#39;s left with no repellent. As your carpet starts to age, you lose protection due to the break down of the repellent. We recommend to have carpet protection reapplied after having your carpets professionally cleaned. It will repel wet and dry soils. We apply this through a pressurized water line after the cleaning is completely finished. 
-</p>
+                                    <p class="width-90 xs-width-100">A great way to keep the carpet cleaner for longer, is to have it treated with carpet protection. All carpet when manufactured has a protective coating applied. Eventually this wears away and it&#39;s left with no repellent. As your carpet starts to age, you lose protection due to the break down of the repellent. We recommend to have carpet protection reapplied after having your carpets professionally cleaned. It will repel wet and dry soils. We apply this through a pressurized water line after the cleaning is completely finished.</p>
                                 </div>
                                 {/* end feature box item */}
                                 {/* start feature box item */}
@@ -70,7 +69,7 @@ const services = () => {
                         </div>
                     </div>
 
-                    <div class="col-md-12 margin-60px-bottom xs-margin-30px-bottom wow fadeIn"><img src="http://placehold.it/1600x639" alt=""/></div>
+                    <div class="col-md-12 margin-60px-bottom xs-margin-30px-bottom wow fadeIn"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/services-upholstery-cleaning.jpg" alt=""/></div>
 
                     {/* row 1 */}
                     <div className="row margin-40px-bottom margin-20px-lr">
@@ -136,7 +135,7 @@ const services = () => {
 
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 display-table sm-margin-30px-bottom wow fadeInLeft">
                         <div class="display-table-cell vertical-align-middle">
-                            <img src="http://placehold.it/1480x1197" class="width-100" alt="" />
+                            <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/services-tile-grout-cleaning.jpg" class="width-100" alt="Tile Cleaning" />
                         </div>
                     </div>
 
@@ -156,4 +155,4 @@ const services = () => {
   );
 }
 
-export default services;
+export default residential;

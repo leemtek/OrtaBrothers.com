@@ -11,7 +11,10 @@ const obHeader = () => {
               <div className="row">
                 {/* start logo */}
                 <div className="col-md-2 col-xs-5">
-                    <a href="index.html" title="Pofo" className="logo"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo@2x.png" className="logo-dark" alt="Pofo" /><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo@2x.png" alt="Pofo" className="logo-light default" /></a>
+                    <a href="index.html" title="Pofo" className="logo">
+                        <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" className="logo-dark" alt="Orta Brothers" />
+                        <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" alt="Orta Brothers" className="logo-light default" />
+                    </a>
                 </div>
                 {/* end logo */}
                 <div className="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right">
@@ -30,8 +33,13 @@ const obHeader = () => {
                             {/* end menu item */}
 
                             {/* start menu item */}
-                            <li className="dropdown">
-                                <a href="/services">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                            <li className="dropdown simple-dropdown"><a title="About">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                {/* start sub menu */}
+                                <ul className="dropdown-menu" role="menu">
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/residential">Residential</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/commercial">Commercial</a></li>
+                                </ul>
+                                {/* end sub menu */}
                             </li>
                             {/* end menu item */}
 
@@ -68,9 +76,8 @@ const obHeader = () => {
                         {/* end search input */}
                     </div>
                     <div className="header-social-icon xs-display-none">
-                        <a href="https://www.facebook.com/" title="Facebook" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/" title="Twitter" target="_blank"><i className="fa fa-twitter"></i></a>
-                        <a href="https://dribbble.com/" title="Dribbble" target="_blank"><i className="fa fa-dribbble"></i></a>
+                        <a href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" title="Facebook" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" title="LinkedIn" target="_blank"><i className="fa fa-linkedin"></i></a>
                     </div>
                 </div>
               </div>
