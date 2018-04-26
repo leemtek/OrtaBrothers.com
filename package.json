@@ -13,6 +13,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && aws s3 rm s3://web-ortabrothers --recursive --profile leemtek && aws s3 cp build s3://web-ortabrothers --recursive --profile leemtek && aws configure set preview.cloudfront true --profile leemtek && aws cloudfront create-invalidation --distribution-id EJB3IAG9SPVKY --paths '/*' --profile leemtek"
+    "deploy": "yarn run build && aws s3 rm s3://web-ortabrothers --recursive --profile leemtek && aws s3 cp build s3://web-ortabrothers --recursive --profile leemtek && aws configure set preview.cloudfront true --profile leemtek && aws cloudfront create-invalidation --distribution-id EJB3IAG9SPVKY --paths '/*' --profile leemtek"
   }
 }

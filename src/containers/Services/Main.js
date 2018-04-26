@@ -46,7 +46,7 @@ const services = () => {
                         <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Commercial Services</a>
                         <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                         <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
-                        <a href="services-modern.html" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Commercial Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
+                        <a href="/services/commercial" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Commercial Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                     </div>
                     
                     {/* start feature box item */}
@@ -57,7 +57,7 @@ const services = () => {
                         <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Residential Services</a>
                         <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                         <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
-                        <a href="services-modern.html" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Residential Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
+                        <a href="/services/residential" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Residential Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                     </div>
                 </div>{/* /row */}
             </div>

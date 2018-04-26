@@ -3,18 +3,43 @@ import React from "react";
 const faqs = () => {
   return (
     <div>
+        {/* start page title section */}
+        <section className="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
+            <div className="container">
+                <div className="row equalize xs-equalize-auto">
+                    <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12 display-table">
+                        <div className="display-table-cell vertical-align-middle text-left xs-text-center">
+                            {/* start page title */}
+                            <h1 className="alt-font text-extra-dark-gray font-weight-600 no-margin-bottom text-uppercase">Frequently Asked Questions</h1>
+                            {/* end page title */}
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 display-table text-right xs-text-left xs-margin-10px-top">
+                        <div className="display-table-cell vertical-align-middle breadcrumb text-small alt-font">
+                            {/* start breadcrumb */}
+                            <ul className="xs-text-center">
+                                <li><a href="/" className="text-dark-gray">Home</a></li>
+                                <li><a href="/about" className="text-dark-gray">About</a></li>
+                                <li className="text-dark-gray">FAQs</li>
+                            </ul>
+                            {/* end breadcrumb */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      {/* start feature box section */}
-      <section className="wow fadeIn bg-light-gray">
-          <div className="container">
-              <div className="row">
-                  <div className="col-lg-7 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
-                      <h5 className="alt-font text-extra-dark-gray font-weight-600">You Have Questions, We Have Answers</h5>
-                  </div>
-              </div>
+        {/* start feature box section */}
+        <section className="wow fadeIn">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-7 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                        <h5 className="alt-font text-extra-dark-gray font-weight-600">You Have Questions, We Have Answers</h5>
+                    </div>
+                </div>
 
-              {/* row 1 */}
-              <div className="row margin-40px-bottom">
+                {/* row 1 */}
+                <div className="row margin-40px-bottom">
 
                 {/* start feature box item */}
                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-box-1 xs-margin-ten-bottom wow fadeInUp last-paragraph-no-margin">
@@ -46,10 +71,10 @@ const faqs = () => {
                 </div>
                 {/* end feature box item */}
 
-              </div>
+                </div>
 
-              {/* row 2 */}
-              <div className="row margin-40px-bottom">
+                {/* row 2 */}
+                <div className="row margin-40px-bottom">
 
                 {/* start feature box item */}
                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-box-1 xs-margin-ten-bottom wow fadeInUp last-paragraph-no-margin">
@@ -81,10 +106,10 @@ const faqs = () => {
                 </div>
                 {/* end feature box item */}
 
-              </div>
+                </div>
 
-              {/* row 3 */}
-              <div className="row margin-40px-bottom">
+                {/* row 3 */}
+                <div className="row margin-40px-bottom">
 
                 {/* start feature box item */}
                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-box-1 xs-margin-ten-bottom wow fadeInUp last-paragraph-no-margin">
@@ -116,10 +141,10 @@ const faqs = () => {
                 </div>
                 {/* end feature box item */}
 
-              </div>
+                </div>
 
-              {/* row 4 */}
-              <div className="row margin-40px-bottom">
+                {/* row 4 */}
+                <div className="row margin-40px-bottom">
 
                 {/* start feature box item */}
                 <div className="col-lg-4 col-md-4 col-sm-4 col-xs-12 feature-box-1 xs-margin-ten-bottom wow fadeInUp last-paragraph-no-margin">
@@ -131,10 +156,10 @@ const faqs = () => {
                 </div>
                 {/* end feature box item */}
 
-              </div>
-          </div>
-      </section>
-      {/* end feature box section */}
+                </div>
+            </div>
+        </section>
+        {/* end feature box section */}
     </div>
   );
 }

@@ -3,23 +3,33 @@ import React from "react";
 const ortabrothers = () => {
   return (
     <div>
-
-        {/* start section */}
-        <section class="extra-big-section parallax wow fadeIn" data-stellar-background-ratio="0.5" style ={ { backgroundImage: "url('http://placehold.it/1920x1150')" } }>
-            <div class="opacity-full-dark bg-extra-dark-gray"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7 col-sm-11 col-xs-12 center-col text-center">
-                        <div class="alt-font text-medium-gray text-uppercase text-small margin-20px-bottom">Mission</div>
-                        <h5 class="text-light-gray alt-font margin-40px-bottom xs-margin-30px-bottom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices mattis nulla nec pulvinar. Proin venenatis consectetur turpis. Vestibulum vulputate arcu ipsum, ut aliquam arcu porttitor ac.</h5>
+        {/* start page title section */}
+        <section className="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
+            <div className="container">
+                <div className="row equalize xs-equalize-auto">
+                    <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12 display-table">
+                        <div className="display-table-cell vertical-align-middle text-left xs-text-center">
+                            {/* start page title */}
+                            <h1 className="alt-font text-extra-dark-gray font-weight-600 no-margin-bottom text-uppercase">About Orta Brother</h1>
+                            {/* end page title */}
+                        </div>
+                    </div>
+                    <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 display-table text-right xs-text-left xs-margin-10px-top">
+                        <div className="display-table-cell vertical-align-middle breadcrumb text-small alt-font">
+                            {/* start breadcrumb */}
+                            <ul className="xs-text-center">
+                                <li><a href="/" className="text-dark-gray">Home</a></li>
+                                <li className="text-dark-gray">About</li>
+                            </ul>
+                            {/* end breadcrumb */}
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        {/* end section */}
 
         {/* start president message section */}
-        <section class="bg-light-gray wow fadeIn">
+        <section class="wow fadeIn">
             <div class="container">
                 <div class="row equalize sm-equalize-auto">
                     <div class="col-md-5 col-sm-12 sm-text-center col-md-offset-1 sm-padding-50px-all xs-padding-15px-lr pull-right">
@@ -47,7 +57,7 @@ const ortabrothers = () => {
         {/* end president message section */}
 
         {/* start history section */}
-        <section class="wow fadeIn">
+        <section class="bg-light-gray wow fadeIn">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12 text-left sm-margin-30px-bottom sm-padding-80px-lr xs-padding-15px-lr sm-text-center wow fadeIn">
@@ -64,7 +74,7 @@ const ortabrothers = () => {
         {/* end history section */}
 
         {/* start testimonial section */}
-        <section class="wow fadeIn animated bg-light-gray testimonial-style3">
+        <section class="wow fadeIn animated testimonial-style3">
             <div class="container">
                 <div class="row">
 
@@ -171,7 +181,7 @@ const ortabrothers = () => {
         {/* end testimonial section */}
 
         {/* start call to action section */}
-        <section class="wow fadeIn animated animated">
+        <section class="bg-light-gray wow fadeIn animated animated">
             <div class="container">
                 <div class="row equalize sm-equalize-auto">
                     <div class="col-md-5 col-sm-12 col-xs-12 text-center sm-margin-30px-bottom wow fadeInLeft">
