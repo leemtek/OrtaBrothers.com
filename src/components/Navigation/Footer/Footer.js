@@ -53,19 +53,19 @@ const obFooter = () => {
                       <ul className="latest-post position-relative top-3">
                           <li className="border-bottom border-color-medium-dark-gray">
                               <figure>
-                                  <a href="blog-post-layout-01.html"><img src="http://placehold.it/700x403" alt="" /></a>
+                                  <a href="blog-post-layout-01.html"><img src="https://placehold.it/700x403" alt="" /></a>
                               </figure>
                               <div className="text-small"><a href="blog-post-layout-01.html">Design is not just what looks...</a> <span className="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                           </li>
                           <li className="border-bottom border-color-medium-dark-gray">
                               <figure>
-                                  <a href="blog-post-layout-02.html"><img src="http://placehold.it/700x403" alt="" /></a>
+                                  <a href="blog-post-layout-02.html"><img src="https://placehold.it/700x403" alt="" /></a>
                               </figure>
                               <div className="text-small"><a href="blog-post-layout-02.html">A lot of care, effort & passion...</a> <span className="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                           </li>
                           <li>
                               <figure>
-                                  <a href="blog-post-layout-03.html"><img src="http://placehold.it/700x403" alt="" /></a>
+                                  <a href="blog-post-layout-03.html"><img src="https://placehold.it/700x403" alt="" /></a>
                               </figure>
                               <div className="text-small"><a href="blog-post-layout-03.html">I love making the stuff, that's...</a> <span className="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                           </li>

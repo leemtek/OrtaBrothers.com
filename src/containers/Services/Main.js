@@ -41,7 +41,7 @@ const services = () => {
                     {/* start feature box item */}
                     <div className="col-md-4 col-sm-4 col-md-push-2 col-sm-push-2 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
                         <div className="margin-ten-bottom overflow-hidden image-hover-style-1 sm-margin-20px-bottom">
-                            <a href="services-modern.html"><img src="images/latest-blog5.jpg" alt=""/></a>
+                            <a href="services-modern.html"><img src="https://placehold.it/360x200" alt=""/></a>
                         </div>
                         <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Commercial Services</a>
                         <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
@@ -52,7 +52,7 @@ const services = () => {
                     {/* start feature box item */}
                     <div className="col-md-4 col-sm-4 col-md-push-2 col-sm-push-2 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center" data-wow-delay="0.2s">
                         <div className="margin-ten-bottom overflow-hidden image-hover-style-1 sm-margin-20px-bottom">
-                            <a href="services-modern.html"><img src="images/latest-blog6.jpg" alt=""/></a>
+                            <a href="services-modern.html"><img src="https://placehold.it/360x200" alt=""/></a>
                         </div>
                         <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Residential Services</a>
                         <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
