@@ -16,7 +16,7 @@ const obHomeHero = () => {
                           {/* layer nr. 1 */}
                           <div className="tp-caption NotGeneric-Title tp-resizeme" 
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                data-y="['middle','middle','middle','middle']" data-voffset="['-90','-90','-90','-90']"
+                                data-y="['middle','middle','middle','middle']" data-voffset="['-95','-95','-95','-95']"
                                 data-fontsize="['12','12','12','12']"
                                 data-lineheight="['20','20','20','20']"
                                 data-width="none"
