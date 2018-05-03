@@ -8,12 +8,13 @@ const obHomeHero = () => {
           <div id="rev_slider_1078_1_wrapper" className="rev_slider_wrapper fullwidthbanner-container" data-alias="classic4export" data-source="gallery" style={{ margin: "0px auto", backgroundColor: "transparent", padding: "0px", marginTop: "0px", marginBottom: "0px" }}>
               {/* start revolution slider 5.4.1 fullwidth mode */}
               <div id="rev_slider_1078_1" className="rev_slider fullwidthabanner" style={{ display: "none" }} data-version="5.4.1">
-                  <ul>{/* slide */}
+                  <ul>
+                      {/* slide 1*/}
                       <li data-index="rs-3045" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="200"  data-thumb=""  data-rotate="0"  data-fstransition="fade" data-fsmasterspeed="100" data-fsslotamount="0" data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                           <div className="opacity-extra-medium bg-black position-relative z-index-1"></div>
                           {/* main image */}
                           <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/orta-brothers-cleaning-wooden-floor.jpg"  alt="Ocean"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" className="rev-slidebg" />
-                          {/* layer nr. 3 */}
+                          {/* layer nr. 1 */}
                           <div className="tp-caption NotGeneric-Title tp-resizeme" 
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                 data-y="['middle','middle','middle','middle']" data-voffset="['-115','-110','-90','-90']"
@@ -31,7 +32,7 @@ const obHomeHero = () => {
                                 data-paddingbottom="[10,10,10,10]"
                                 data-paddingleft="[0,0,0,0]"
                                 style={{ zIndex: "7", whiteSpace: "nowrap", textTransform: "uppercase", fontFamily: "'Montserrat', sans-serif !important", fontWeight: 500, letterSpacing: "2px" }}>Lorem ipsum dolor sit amet</div>
-                          {/* layer nr. 4 */}
+                          {/* layer nr. 2 */}
                           <div className="tp-caption NotGeneric-SubTitle tp-resizeme " 
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
@@ -50,7 +51,7 @@ const obHomeHero = () => {
                                 data-paddingleft="[0,0,0,0]"
                                 style={{ zIndex: 8, whiteSpace: "nowrap", fontFamily: "'Montserrat', sans-serif !important", fontWeight: 600, letterSpacing: "-1px" }}>Cras convallis<br />orci ut sapien</div>
 
-                          {/* layer nr. 5 */}
+                          {/* layer nr. 3 */}
                           <Link to="/" className="tp-caption btn btn-transparent-white btn-medium border-radius-4 z-index-5" 
                               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                               data-y="['middle','middle','middle','middle']" data-voffset="['130','130','110','110']" 
@@ -68,15 +69,14 @@ const obHomeHero = () => {
                               data-paddingbottom="[6,6,6,6]"
                               data-paddingleft="[26,26,26,26]"
                               data-basealign="slide">Explore Work</Link>
-                          {/* LAYER NR. 6 */}
                       </li>
                       
-                      {/* slide */}
+                      {/* slide 2 */}
                       <li data-index="rs-2" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                           <div className="opacity-extra-medium bg-black position-relative z-index-1"></div>
                           {/* main image */}
                           <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/orta-brothers-cleaning-rugs.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" className="rev-slidebg" data-no-retina />
-                          {/* layer nr. 3 */}
+                          {/* layer nr. 1 */}
                           <div className="tp-caption NotGeneric-Title tp-resizeme" 
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                 data-y="['middle','middle','middle','middle']" data-voffset="['-115','-110','-90','-90']"
@@ -99,7 +99,7 @@ const obHomeHero = () => {
                                 data-basealign="slide" 
                                 style={{ zIndex: "7", whiteSpace: "nowrap", textTransform: "uppercase", fontFamily: "'Montserrat', sans-serif !important", fontWeight: 500, letterSpacing: "2px" }}>Lorem ipsum dolor sit amet</div>
 
-                          {/* layer nr. 4 */}
+                          {/* layer nr. 2 */}
                           <div className="tp-caption NotGeneric-SubTitle tp-resizeme " 
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
@@ -121,8 +121,9 @@ const obHomeHero = () => {
                                 data-paddingleft="[30,30,30,30]"
                                 data-basealign="slide" 
                                 style={{ zIndex: "8", whiteSpace: "nowrap", fontFamily: "'Montserrat', sans-serif !important", fontWeight: "600", letterSpacing: "-1px" }}>Aenean egestas<br />vitae justo</div>
-                          {/* layer nr. 5 */}
-                          <Link to="/" className="tp-caption btn btn-transparent-white btn-medium border-radius-4 z-index-5" 
+
+                          {/* layer nr. 3 */}
+                          <Link to="/services" className="tp-caption btn btn-transparent-white btn-medium border-radius-4 z-index-5" 
                               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                               data-y="['middle','middle','middle','middle']" data-voffset="['130','130','110','110']" 
                               data-fontsize="['12','14','14','14']"
@@ -139,13 +140,14 @@ const obHomeHero = () => {
                               data-paddingbottom="[6,6,6,6]"
                               data-paddingleft="[26,26,26,26]"
                               data-basealign="slide">Explore Work</Link>
-                          {/* LAYER NR. 6 */}
                       </li>
+
+                      {/* slide 3 */}
                       <li data-index="rs-3" data-transition="fade" data-slotamount="3" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                           <div className="opacity-extra-medium bg-black position-relative z-index-1"></div>
                           {/* main image */}
                           <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/orta-brothers-washing-cement.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" className="rev-slidebg" data-no-retina />
-                          {/* layer nr. 3 */}
+                          {/* layer nr. 1 */}
                           <div className="tp-caption NotGeneric-Title tp-resizeme" 
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                 data-y="['middle','middle','middle','middle']" data-voffset="['-115','-110','-90','-90']"
@@ -168,7 +170,7 @@ const obHomeHero = () => {
                                 data-basealign="slide" 
                                 style={{ zIndex: "7", whiteSpace: "nowrap", textTransform: "uppercase", fontFamily: "'Montserrat', sans-serif !important", fontWeight: 500, letterSpacing: "2px" }}>Lorem ipsum dolor sit amet</div>
 
-                          {/* layer nr. 4 */}
+                          {/* layer nr. 2 */}
                           <div className="tp-caption NotGeneric-SubTitle tp-resizeme " 
                                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                                 data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
@@ -191,9 +193,8 @@ const obHomeHero = () => {
                                 data-basealign="slide" 
                                 style={{ zIndex: "8", whiteSpace: "nowrap", fontFamily: "'Montserrat', sans-serif !important", fontWeight: "600", letterSpacing: "-1px" }}>Integer porttitor<br />venenatis lorem</div>
 
-                          {/* layer nr. 5 */}
-                          {/* layer nr. 5 */}
-                          <Link to="/" className="tp-caption btn btn-transparent-white btn-medium border-radius-4 z-index-5" 
+                          {/* layer nr. 3 */}
+                          <Link to="/services" className="tp-caption btn btn-transparent-white btn-medium border-radius-4 z-index-5" 
                               data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
                               data-y="['middle','middle','middle','middle']" data-voffset="['130','130','110','110']" 
                               data-fontsize="['12','14','14','14']"
