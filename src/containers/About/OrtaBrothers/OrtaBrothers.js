@@ -36,18 +36,30 @@ const ortabrothers = () => {
                         <div class="display-table width-100 height-100">
                             <div class="display-table-cell vertical-align-middle">
                                 <i class="fa fa-quote-left text-deep-pink icon-medium margin-15px-bottom"></i>
-                                <h5 class="text-extra-dark-gray alt-font text-uppercase font-weight-700">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                                <p class="width-90 sm-width-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices mattis nulla nec pulvinar. Proin venenatis consectetur turpis. Vestibulum vulputate arcu ipsum, ut aliquam arcu porttitor ac. Suspendisse consequat nulla ac mauris aliquet, viverra viverra urna vehicula. Suspendisse consequat nulla ac mauris aliquet, viverra viverra urna vehicula.</p>
+                                <h5 class="text-extra-dark-gray alt-font text-uppercase font-weight-700">We don’t treat a stain and immediately say<br /> “it can’t 
+                                be removed”.</h5>
+
+                                <p class="width-90 sm-width-100">Orta Brothers Carpet Cleaning Inc is owned by Isaias Orta. A long time bay area resident with family 
+                                roots in Conccord,CA. We are a local carpet cleaning company servicing all of Contra Costa County and the surrounding areas. We offer many 
+                                years of experience with residential, commercial and property management clients. Our employees are highly trained, experienced and 
+                                passionate individuals who are completely dedicated to our customers satisfaction. Using state of the art equipment we specialize in 
+                                restorative carpet cleaning, stain removal and odor removal. We don’t treat a stain and immediately say “it can’t be removed”. We continue 
+                                to treat stains as needed before coming to a final conclusion and we thrive in situations where a successful outcome doesn’t come easy. We 
+                                are constantly researching new techniques to set the industry’s highest standards and we utilize the best quality cleaning agents which 
+                                are safe for your family and your pets.</p>
+
+                                <p class="width-90 sm-width-100">At Orta Brothers Carpet Cleaning Inc, we take pride in our standard of cleaning and our exceptional customer service. We are entirely 
+                                dedicated to the satisfaction of every customer and the comfort of every customer’s home or business.</p>
                                 <img src="images/signature-dark.png" alt="" class="margin-15px-top"/>
-                                <span class="text-extra-dark-gray text-large display-block margin-30px-top alt-font font-weight-600">John Smith</span>
-                                <span class="display-block">From the president&#39;s desk</span>
+                                <span class="text-extra-dark-gray text-large display-block margin-30px-top alt-font font-weight-600">Isaias Orta</span>
+                                <span class="display-block">From the CEO of Orta Brothers</span>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12 text-center">
                         <div class="display-table width-100 height-100">
-                            <div class="display-table-cell vertical-align-bottom">
-                                <img src="http://placehold.it/600x741" alt=""/>
+                            <div class="vertical-align-bottom">
+                                <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/isaias-orta-cleaning-rug.jpg" alt=""/>
                             </div>
                         </div>
                     </div>
