@@ -13,6 +13,7 @@ import OrtaBrothers from "./containers/About/OrtaBrothers/OrtaBrothers";
 import Faqs from "./containers/About/FAQs/Faqs";
 import Contact from "./containers/Contact/Contact";
 import Quote from "./containers/Contact/Quote/Quote";
+import SoftwareEngineers from "./containers/Software-Engineers/SoftwareEngineers";
 
 export default class App extends Component {
   render() {
@@ -31,6 +32,7 @@ export default class App extends Component {
             <Route path="/services/commercial" exact component={ Services_Commercial } />
           <Route path="/contact" exact component={ Contact } />
             <Route path="/contact/quote" exact component={ Quote } />
+          <Route path="/software-engineers" exact component={ SoftwareEngineers } />
           <Route path="/" exact component={ Home } />
         </Switch>
 
