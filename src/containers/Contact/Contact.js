@@ -120,6 +120,7 @@ class Contact extends Component {
     );
   } // render()
   
+  // Toggle true/false if you're testing this component.
   isTest = false;
   
   constructor(props) {
@@ -164,7 +165,7 @@ class Contact extends Component {
       fetch((this.isTest) ? console.log(model) : "");
 
       // Submit results to GCF and indicate status.
-      fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/chateaujudsonville/send" : "https://us-central1-leemtek-secure-forms.cloudfunctions.net/chateaujudsonville/send", {
+      fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/ortabrothers/send" : "https://us-central1-leemtek-secure-forms.cloudfunctions.net/ortabrothers/send", {
         method: "post",
         body: JSON.stringify(model), 
         headers: new Headers({"Content-Type": "application/json"})
