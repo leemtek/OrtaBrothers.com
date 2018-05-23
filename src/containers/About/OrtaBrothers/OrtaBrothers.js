@@ -101,9 +101,9 @@ const ortabrothers = () => {
                         {/* start testimonial item */}
                         <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3">
                             <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                I looked around the Living Social and Groupon deals, but I was referred to Orta by my complex manager. Ricardo showed up between the agreed 
+                                <p>I looked around the Living Social and Groupon deals, but I was referred to Orta by my complex manager. Ricardo showed up between the agreed 
                                 time slot. He had me show him around the carpet areas and then proceeded to clean. He was thorough and very pleasant. Nice to feel safe when 
-                                you're a woman alone. He finished and was super polite. I will definitely call Orta Brothers again!
+                                you're a woman alone. He finished and was super polite. I will definitely call Orta Brothers again!</p>
                             </div>
                             <div class="testimonial-box padding-25px-all xs-padding-20px-all">
                                 <div class="image-box width-20"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/testimonials/jocelyn-j.jpg" class="border-radius-100" alt="Orta Brothers Jocelyn J"/></div>
