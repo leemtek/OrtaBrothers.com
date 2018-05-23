@@ -101,13 +101,14 @@ const ortabrothers = () => {
                         {/* start testimonial item */}
                         <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3">
                             <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
+                                I looked around the Living Social and Groupon deals, but I was referred to Orta by my complex manager. Ricardo showed up between the agreed 
+                                time slot. He had me show him around the carpet areas and then proceeded to clean. He was thorough and very pleasant. Nice to feel safe when 
+                                you're a woman alone. He finished and was super polite. I will definitely call Orta Brothers again!
                             </div>
                             <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="image-box width-20"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/testimonials/jocelyn-j.jpg" class="border-radius-100" alt="Orta Brothers Jocelyn J"/></div>
                                 <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Jocelyn J.</div>
                                 </div>
                             </div>
                         </div>
@@ -115,13 +116,14 @@ const ortabrothers = () => {
                         {/* start testimonial item */}
                         <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
                             <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
+                                Just had my carpet cleaned by Orta brothers and could not be happier! They came exactly when they had told us they would and were 
+                                very professional. They left our carpet looking 100% better, and smelling so fresh. Would never go with another company. Very competitive 
+                                pricing and all around great service! (FYI) Don't rent carpet cleaner from Railey's. LoL
                             </div>
                             <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="image-box width-20"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/testimonials/manuel-l.jpg" class="border-radius-100" alt="Orta Brothers Manuel L"/></div>
                                 <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Manuel L.</div>
                                 </div>
                             </div>
                         </div>
@@ -129,13 +131,17 @@ const ortabrothers = () => {
                         {/* start testimonial item */}
                         <div class="col-md-4 wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
                             <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
+                            OB Residential was able to work around my schedule and provide there services on the weekend.  I was thinking about replacing the carpet on the 
+                            stairs and entry way, which the previous owners left filthy.<br /><br />
+
+                            They were able to restore the carpet, and save me the head ache (and $$)  of changing the carpet.  I liked the cleaning option, of being 
+                            able to use a environmentally safe cleaning agent (orange peel based).  The service technician was very informative, and provided great 
+                            friendly service.
                             </div>
                             <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="image-box width-20"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/testimonials/immanuel-e.jpg" class="border-radius-100" alt="Orta Brothers Immanuel E"/></div>
                                 <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Immanuel E</div>
                                 </div>
                             </div>
                         </div>
@@ -146,13 +152,16 @@ const ortabrothers = () => {
                         {/* start testimonial item */}
                         <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3">
                             <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                I wanted to hire the best and after looking at several other companies, I knew Jacob was the perfect guy for the job. He is a true professional.
+                            Orta Bros did a great job cleaning the carpets in our house. It is amazing what a difference clean carpets make!<br /><br />
+
+                            The people who cleaned the carpets were diligent, friendly and took care of everything for us. It is a fairly large three bedroom house and they 
+                            were done before I knew it. The carpets dried quickly and everything looked fabulous. Much better than renting the carpet cleaners at the grocery 
+                            store. Our carpets look new again!
                             </div>
                             <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="image-box width-20"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/testimonials/peter-b.jpg" class="border-radius-100" alt="Orta Brothers Peter B"/></div>
                                 <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Shoko Mugikura</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Graphic Designer</p>
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Peter B.</div>
                                 </div>
                             </div>
                         </div>
@@ -160,13 +169,16 @@ const ortabrothers = () => {
                         {/* start testimonial item */}
                         <div class="col-md-4 sm-margin-two-bottom wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.2s">
                             <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                This is an excellent company! I personally enjoyed the energy and the professional support the whole team gave to us into creating website.
+                            Orta Brothers carpet cleaning did a great job on my house. I simply left them a key under my mat and came home to carpet that looked brand new!<br /><br />
+
+                            Completly trust worthy, great job, friendly servcie, and even left my key back on the mat when they left.<br /><br />
+
+                            5 star servcie all day !
                             </div>
                             <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="image-box width-20"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/testimonials/eric-l.jpg" class="border-radius-100" alt="Orta Brothers Eric L"/></div>
                                 <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Alexander Harvard</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Creative Director</p>
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Eric L.</div>
                                 </div>
                             </div>
                         </div>
@@ -174,13 +186,12 @@ const ortabrothers = () => {
                         {/* start testimonial item */}
                         <div class="col-md-4 wow fadeIn last-paragraph-no-margin testimonial-style3" data-wow-delay="0.4s">
                             <div class="testimonial-content-box padding-twelve-all bg-white border-radius-6 box-shadow arrow-bottom sm-padding-eight-all">
-                                Their team are easy to work with and helped me make amazing websites in a short amount of time. Thanks again guys for all your hard work.
+                                Great work! My rugs have never looked cleaner. Thank you for being professional and making sure that my living looked immaculate.
                             </div>
                             <div class="testimonial-box padding-25px-all xs-padding-20px-all">
-                                <div class="image-box width-20"><img src="http://placehold.it/149x149" class="border-radius-100" alt=""/></div>
+                                <div class="image-box width-20"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/testimonials/roberto-g.jpg" class="border-radius-100" alt="Orta Brothers Roberto G"/></div>
                                 <div class="name-box padding-20px-left">
-                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Herman Miller</div>
-                                    <p class="text-extra-small text-uppercase text-medium-gray">Co Founder / CEO</p>
+                                    <div class="alt-font font-weight-600 text-small text-uppercase text-extra-dark-gray">Roberto G.</div>
                                 </div>
                             </div>
                         </div>
