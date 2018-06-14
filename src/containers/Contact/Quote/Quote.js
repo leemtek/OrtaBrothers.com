@@ -11,19 +11,15 @@ class Quote extends Component {
         name: "",
         email: "",
         phone: "",
-        basicCleaning: {
-          threeroomsAndHallways: "",
-          eachBedroomAfter3: "",
-          largeRooms: "",
-          masterBedroomsAndBath: "",
-          staircase: "",
-          areaRug: ""
-        },
-        heavyCleaning: {
-          heavyCleaning: 0,
-          eachAdditionalRoom: "",
-          eachAdditionalLargeRoom: ""
-        },
+        basicCleaning_threeRoomsAndHallways: false,
+          basicCleaning_eachBedroomAfter3: "0",
+          basicCleaning_largeRooms: "0",
+          basicCleaning_masterBedroomsAndBath: "0",
+          basicCleaning_staircase: "0",
+          basicCleaning_areaRug: "0",
+        heavyCleaning: false,
+          heavyCleaning_eachAdditionalRoom: "0",
+          heavyCleaning_eachAdditionalLargeRoom: "0",
         anySizeRoom: ""
       }, // userData
       colBasic: {
@@ -134,7 +130,7 @@ class Quote extends Component {
                   </div>
                   <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
                     <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">First &amp; Last Name</span>
-                    <input className="input-bg"
+                    <input className="input-bg" required="required"
                       name="name"
                       type="text"
                       value={this.state.userData.name}
@@ -147,7 +143,7 @@ class Quote extends Component {
                   </div>
                   <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
                     <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">E-mail</span>
-                    <input className="input-bg"
+                    <input className="input-bg" required="required"
                       name="email"
                       type="email"
                       value={this.state.userData.email}
@@ -160,7 +156,11 @@ class Quote extends Component {
                   </div>
                   <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
                     <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">Phone Number</span>
-                    <input className="input-bg" required="required" name="phone_number" type="text" />
+                    <input className="input-bg" required="required"
+                      name="phone"
+                      type="tel"
+                      value={this.state.userData.phone}
+                      onChange={this.handleInputChange} />
                   </div>
                 </div>
               </div>{/* .row */}
@@ -179,22 +179,148 @@ class Quote extends Component {
                     <ul className="list-style-11">
                       <li className="alt-font font-weight-600">Description</li>
                       <li>
-                        <QuoteFormRow type="checkbox" click={this.checkboxClickedBasicHandler} name="3RoomsAndHallways" text1="3 Rooms &amp; Hallways" text2="(no charge for hallways)" />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label htmlFor="basicCleaning_threeRoomsAndHallways">3 Rooms &amp; Hallways<br /><small>(no charge for hallways)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <input
+                              name="basicCleaning_threeRoomsAndHallways"
+                              type="checkbox"
+                              checked={this.state.userData.basicCleaning_threeRoomsAndHallways}
+                              onChange={this.handleInputChange} />
+                          </div>{/* gFormCellElement */}
+                        </div>
                       </li>
                       <li>
-                        <QuoteFormRow type="select" name="eachBedroomAfter3" text1="Each Bed Room After Three" text2="(any size)" isEnabled={this.state.colBasic.formUsable} />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Each Bed Room After Three<br/><small>(any size)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_eachBedroomAfter3"
+                              value={ this.state.userData.basicCleaning_eachBedroomAfter3 }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                       <li>
-                        <QuoteFormRow type="select" name="largeRooms" text1="Living / Dining / Family / Loft" text2="(large rooms)" isEnabled={this.state.colBasic.formUsable} />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Living / Dining / Family / Loft<br/><small>(large rooms)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_largeRooms"
+                              value={ this.state.userData.basicCleaning_largeRooms }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                       <li>
-                        <QuoteFormRow type="select" name="masterBedroomsAndBath" text1="Master Bedrooms with Bath" text2="&nbsp;" isEnabled={this.state.colBasic.formUsable} />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Master Bedrooms with Bath<br/><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_masterBedroomsAndBath"
+                              value={ this.state.userData.basicCleaning_masterBedroomsAndBath }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                       <li>
-                        <QuoteFormRow type="select" name="staircase" text1="Staircase" text2="(per step)" isEnabled={this.state.colBasic.formUsable} />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Staircase<br/><small>(per step)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_staircase"
+                              value={ this.state.userData.basicCleaning_staircase }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                       <li>
-                        <QuoteFormRow type="select" name="areaRug" text1="Area Rug" text2="(per rug)" isEnabled={this.state.colBasic.formUsable} />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Area Rug<br/><small>(per rug)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_areaRug"
+                              value={ this.state.userData.basicCleaning_areaRug }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                     </ul>
                   </div>
@@ -213,13 +339,70 @@ class Quote extends Component {
                     <ul className="list-style-11">
                       <li className="alt-font font-weight-600">Description</li>
                       <li>
-                        <QuoteFormRow type="checkbox" click={this.checkboxClickedHeavyHandler} name="HC3rooms" text1="Heavy Cleaning" text2="(3 rooms)" />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label htmlFor="heavyCleaning">Heavy Cleaning<br /><small>(3 rooms)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <input
+                              name="heavyCleaning"
+                              type="checkbox"
+                              checked={this.state.userData.heavyCleaning}
+                              onChange={this.handleInputChange} />
+                          </div>{/* gFormCellElement */}
+                        </div>
                       </li>
                       <li>
-                        <QuoteFormRow type="select" name="HCAddRoom" text1="Each Additional Room" text2="&nbsp;" isEnabled={this.state.colHeavy.formUsable} />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Each Additional Room<br/><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.heavyCleaning } 
+                              name="heavyCleaning_eachAdditionalRoom"
+                              value={ this.state.userData.heavyCleaning_eachAdditionalRoom }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                       <li>
-                        <QuoteFormRow type="select" name="HCAddLargeRoom" text1="Each Additional Large Room" text2="&nbsp;" isEnabled={this.state.colHeavy.formUsable} />
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Each Additional Large Room<br/><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.heavyCleaning } 
+                              name="heavyCleaning_eachAdditionalLargeRoom"
+                              value={ this.state.userData.heavyCleaning_eachAdditionalLargeRoom }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                     </ul>
                   </div>
@@ -240,6 +423,31 @@ class Quote extends Component {
                       <li className="alt-font font-weight-600">Description</li>
                       <li>
                         <QuoteFormRow type="select" name="DCAnySizeRoom" text1="Any Size Room" text2="(RX-20) Each" isEnabled={this.state.colHeavy.formUsable} />
+
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Each Additional Large Room<br/><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.heavyCleaning } 
+                              name="anySizeRoom"
+                              value={ this.state.userData.anySizeRoom }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
                       </li>
                     </ul>
                   </div>
