@@ -21,7 +21,8 @@ class Quote extends Component {
           heavyCleaning_eachAdditionalRoom: "0",
           heavyCleaning_eachAdditionalLargeRoom: "0",
         anySizeRoom: "",
-        comment: ""
+        comment: "",
+        emailMessage: ""
       }, // userData
       colBasic: {
         formUsable: false
@@ -34,52 +35,6 @@ class Quote extends Component {
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   } // constructor(props)
-
-  checkboxClickedBasicHandler = (event) => {
-    const doesShow = this.state.colBasic.formUsable;
-    let colBasic = {
-      formUsable: !doesShow
-    } // colBasic
-    
-    this.setState({colBasic: colBasic});
-  } // checkboxClickedBasicHandler(event)
-
-  checkboxClickedHeavyHandler = () => {
-    const doesShow = this.state.colHeavy.formUsable;
-    let colHeavy = {
-      formUsable: !doesShow
-    } // colHeavy
-    
-    this.setState({colHeavy: colHeavy});
-  } // checkboxClickedHeavyHandler()
-
-  /**
-   * When the user types anything, state gets updated.
-   * @argument {object} event - Contents of form.
-   */
-  handleInputChange(event) {
-    const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
-    const name = target.name;
-
-    // Make a new userData state.
-    let newUserData = {
-      ...this.state.userData,
-      [name]: value
-    }
-    
-    this.setState({
-      userData: newUserData
-    });
-  } // handleChange(event)
-
-  handleSubmit = (event) => {
-    // Output JSON
-    console.log(this.state.userData);
-
-    // Prevent page refresh.
-    event.preventDefault();
-  } // handleSubmit(event)
 
   render() {
     return (
@@ -469,7 +424,12 @@ class Quote extends Component {
                       onChange={this.handleInputChange} />
                   </div>
                 </div>
-              </div>
+              </div>{/* .row */}
+              <div id="validation-error" className="row" style={{display: "none"}}>
+                <div className="col-sm-8 col-sm-offset-2">
+                  <div className="alert alert-danger text-center">Please check First &amp; Last Name, Email, or Phone.</div>
+                </div>
+              </div>{/* .row */}
               <div className="row">
                 <div className="col-md-12 text-center">
                   <input type="submit" value="send message" className="btn btn-transparent-dark-gray btn-large margin-20px-top" />
@@ -483,6 +443,88 @@ class Quote extends Component {
       </div>
     );
   } // render()
+
+  /**
+   * When the user types anything, state gets updated.
+   * @param {object} event - Contents of form.
+   */
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    // Make a new userData state.
+    let newUserData = {
+      ...this.state.userData,
+      [name]: value
+    }
+    
+    this.setState({
+      userData: newUserData
+    });
+  } // handleChange(event)
+
+  /**
+   * Sends out the body to the API that handles the email.
+   * @param {object} event - Contents of React stuff like the form in render().
+   */
+  handleSubmit = (event) => {
+    // Check if name, email, and phone were filled out.
+    if (this.state.userData.name === null) {
+      document.getElementById("validation-error").style.display = "block";
+    } else if (this.state.userData.email === null) {
+      document.getElementById("validation-error").style.display = "block";
+    } else if (this.state.userData.phone === null) {
+      document.getElementById("validation-error").style.display = "block";
+    } else {
+      // Output JSON
+      console.log(this.state.userData);
+
+      // Remove error block.
+      document.getElementById("validation-error").style.display = "none";
+
+      // 
+      this.state.userData.emailMessage = this.formulateEmailBody();
+
+      // TODO: Submit to API using this.state.userData
+      
+    } // if
+    
+    // Prevent page refresh.
+    event.preventDefault();
+  } // handleSubmit(event)
+
+  /**
+   * Create the body of the email. This includes the quote from the customer.
+   * @returns {string} Email message body.
+   */
+  formulateEmailBody = () => {
+    return `
+        Full Name: ${this.state.userData.name}
+        Phone: ${this.state.userData.phone}
+        Email: ${this.state.userData.phone}
+
+        Message: ${this.state.userData.comment}
+
+        Basic Cleaning
+        3 Rooms & Hallways: ${this.state.userData.basicCleaning_threeRoomsAndHallways}
+        Each Bed Room After Three (any size): ${this.state.userData.basicCleaning_eachBedroomAfter3}
+        Living / Dining / Family / Loft (large rooms): ${this.state.userData.basicCleaning_largeRooms}
+        Master Bedrooms with Bath: ${this.state.userData.basicCleaning_masterBedroomsAndBath}
+        Staircase: ${this.state.userData.basicCleaning_staircase}
+        Area Rug: ${this.state.userData.basicCleaning_areaRug}
+
+        Heavy Cleaning
+        Heavy Cleaning (3 rooms): ${this.state.userData.heavyCleaning}
+        Each Additional Room: ${this.state.userData.heavyCleaning_eachAdditionalRoom}
+        Each Additional Large Room: ${this.state.userData.heavyCleaning_eachAdditionalLargeRoom}
+
+        Deep Cleaning
+        Any Size Room (RX-20): ${this.state.userData.anySizeRoom}
+
+        Quote Cost: 
+      `;
+  } // formulateEmailBody()
 }
 
 export default Quote;
