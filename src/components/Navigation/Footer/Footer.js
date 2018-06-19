@@ -9,14 +9,16 @@ const obFooter = () => {
                   {/* start slogan */}
                   <div className="col-md-4 col-sm-5 col-xs-12 text-center alt-font display-table xs-text-center xs-margin-15px-bottom">
                       <div className="display-table-cell vertical-align-middle">
-                          London based highly creative studio
+                          SF East Bay Carpet Cleaning
                       </div>
                   </div>
                   {/* end slogan */}
                   {/* start logo */}
                   <div className="col-md-4 col-sm-2 col-xs-12 text-center display-table xs-margin-10px-bottom">
                       <div className="display-table-cell vertical-align-middle">
-                          <a href="index.html"><img className="footer-logo" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/template-pofo/images/logo-white@2x.png" alt="Pofo" /></a>
+                          <a href="index.html">
+                            <img className="footer-logo" src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" alt="Orta Brothers" />
+                        </a>
                       </div>
                   </div>
                   {/* end logo */}
@@ -26,10 +28,8 @@ const obFooter = () => {
                           <span className="alt-font margin-20px-right">On social networks</span>
                           <div className="social-icon-style-8 display-inline-block vertical-align-middle">
                               <ul className="small-icon no-margin-bottom">
-                                  <li><a className="facebook text-white" href="https://www.facebook.com/" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                  <li><a className="twitter text-white" href="https://twitter.com/" target="_blank"><i className="fa fa-twitter"></i></a></li>
-                                  <li><a className="google text-white" href="https://plus.google.com" target="_blank"><i className="fa fa-google-plus"></i></a></li>
-                                  <li><a className="instagram text-white" href="https://instagram.com/" target="_blank"><i className="fa fa-instagram no-margin-right" aria-hidden="true"></i></a></li>
+                                  <li><a className="facebook text-white" href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                  <li><a className="linkedin text-white" href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" target="_blank"><i className="fa fa-linkedin"></i></a></li>
                               </ul>
                           </div>
                       </div>
@@ -43,7 +43,7 @@ const obFooter = () => {
               <div className="row">
                   {/* start about */}
                   <div className="col-md-3 col-sm-6 col-xs-12 widget sm-margin-30px-bottom xs-text-center">
-                      <div className="widget-title alt-font text-small text-medium-gray text-uppercase margin-15px-bottom font-weight-600">About Agency</div>
+                      <div className="widget-title alt-font text-small text-medium-gray text-uppercase margin-15px-bottom font-weight-600">About Orta Brothers</div>
                       <p className="text-small width-95 xs-width-100 no-margin">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.  Lorem Ipsum is simply dummy text of the and typesetting industry. </p>
                   </div>
                   {/* end about */}
@@ -53,19 +53,19 @@ const obFooter = () => {
                       <ul className="latest-post position-relative top-3">
                           <li className="border-bottom border-color-medium-dark-gray">
                               <figure>
-                                  <a href="blog-post-layout-01.html"><img src="http://placehold.it/700x403" alt="" /></a>
+                                  <a href="blog-post-layout-01.html"><img src="https://placehold.it/700x403" alt="" /></a>
                               </figure>
                               <div className="text-small"><a href="blog-post-layout-01.html">Design is not just what looks...</a> <span className="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                           </li>
                           <li className="border-bottom border-color-medium-dark-gray">
                               <figure>
-                                  <a href="blog-post-layout-02.html"><img src="http://placehold.it/700x403" alt="" /></a>
+                                  <a href="blog-post-layout-02.html"><img src="https://placehold.it/700x403" alt="" /></a>
                               </figure>
                               <div className="text-small"><a href="blog-post-layout-02.html">A lot of care, effort & passion...</a> <span className="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                           </li>
                           <li>
                               <figure>
-                                  <a href="blog-post-layout-03.html"><img src="http://placehold.it/700x403" alt="" /></a>
+                                  <a href="blog-post-layout-03.html"><img src="https://placehold.it/700x403" alt="" /></a>
                               </figure>
                               <div className="text-small"><a href="blog-post-layout-03.html">I love making the stuff, that's...</a> <span className="clearfix"></span>20 April 2017 | by <a href="blog-grid.html">Herman Miller</a></div>
                           </li>
@@ -100,8 +100,8 @@ const obFooter = () => {
           <div className="footer-bottom border-top border-color-medium-dark-gray padding-30px-top">
               <div className="row">
                   {/* start copyright */}
-                  <div className="col-md-6 col-sm-6 col-xs-12 text-left text-small xs-text-center">POFO - Portfolio Concept Theme</div>
-                  <div className="col-md-6 col-sm-6 col-xs-12 text-right text-small xs-text-center">&COPY; 2017 POFO is Proudly Powered by <a href="http://www.themezaa.com" target="_blank" title="ThemeZaa">ThemeZaa</a></div>
+                  <div className="col-md-6 col-sm-6 col-xs-12 text-left text-small xs-text-center">&copy; 2018 Orta Brothers</div>
+                  <div className="col-md-6 col-sm-6 col-xs-12 text-right text-small xs-text-center">Web Development by <a href="https://www.leemtek.com" target="_blank">LeemTek</a></div>
                   {/* end copyright */}
               </div>
           </div>
