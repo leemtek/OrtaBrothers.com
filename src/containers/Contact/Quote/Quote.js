@@ -20,7 +20,8 @@ class Quote extends Component {
         heavyCleaning: false,
           heavyCleaning_eachAdditionalRoom: "0",
           heavyCleaning_eachAdditionalLargeRoom: "0",
-        anySizeRoom: ""
+        anySizeRoom: "",
+        comment: ""
       }, // userData
       colBasic: {
         formUsable: false
@@ -462,7 +463,10 @@ class Quote extends Component {
                   </div>
                   <div className="col-md-11 col-sm-10 col-xs-12 no-padding">
                     <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">Have a question? Please let us know!</span>
-                    <textarea name="comment" id="comment" placeholder="" rows="6" className="big-textarea input-bg"></textarea>
+                    <textarea rows="6" className="big-textarea input-bg"
+                      name="comment"
+                      value={this.state.userData.message} 
+                      onChange={this.handleInputChange} />
                   </div>
                 </div>
               </div>
