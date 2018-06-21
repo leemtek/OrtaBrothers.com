@@ -495,34 +495,58 @@ class Quote extends Component {
   } // handleSubmit(event)
 
   /**
+   * Calculate the cost of the quote.
+   * @returns {string} Total quote.
+   */
+  calculateQuote = () => {
+    let totalCost = 0;
+
+    // TODO: Calculate Basic Cleaning
+    if (this.state.basicCleaning_threeRoomsAndHallways === true) totalCost += 80;
+    totalCost += 25 * parseInt(this.state.basicCleaning_eachBedroomAfter3);
+    totalCost += 50 * parseInt(this.state.basicCleaning_largeRooms);
+    totalCost += 50 * parseInt(this.state.basicCleaning_masterBedroomsAndBath);
+    totalCost += 2 * parseInt(this.state.basicCleaning_staircase);
+    totalCost += 25 * parseInt(this.state.basicCleaning_areaRug);
+
+    // TODO: Calculate Heavy Cleaning
+
+
+    // TODO: Calculate Deep Cleaning
+
+    
+    // Return total.
+  }
+
+  /**
    * Create the body of the email. This includes the quote from the customer.
    * @returns {string} Email message body.
    */
   formulateEmailBody = () => {
     return `
-        Full Name: ${this.state.userData.name}
-        Phone: ${this.state.userData.phone}
-        Email: ${this.state.userData.phone}
+      Full Name: ${this.state.userData.name}
+      Phone: ${this.state.userData.phone}
+      Email: ${this.state.userData.phone}
 
-        Message: ${this.state.userData.comment}
+      Message: ${this.state.userData.comment}
 
-        Basic Cleaning
-        3 Rooms & Hallways: ${this.state.userData.basicCleaning_threeRoomsAndHallways}
-        Each Bed Room After Three (any size): ${this.state.userData.basicCleaning_eachBedroomAfter3}
-        Living / Dining / Family / Loft (large rooms): ${this.state.userData.basicCleaning_largeRooms}
-        Master Bedrooms with Bath: ${this.state.userData.basicCleaning_masterBedroomsAndBath}
-        Staircase: ${this.state.userData.basicCleaning_staircase}
-        Area Rug: ${this.state.userData.basicCleaning_areaRug}
+      Basic Cleaning
+      3 Rooms & Hallways: ${this.state.userData.basicCleaning_threeRoomsAndHallways}
+      Each Bed Room After Three (any size): ${this.state.userData.basicCleaning_eachBedroomAfter3}
+      Living / Dining / Family / Loft (large rooms): ${this.state.userData.basicCleaning_largeRooms}
+      Master Bedrooms with Bath: ${this.state.userData.basicCleaning_masterBedroomsAndBath}
+      Staircase: ${this.state.userData.basicCleaning_staircase}
+      Area Rug: ${this.state.userData.basicCleaning_areaRug}
 
-        Heavy Cleaning
-        Heavy Cleaning (3 rooms): ${this.state.userData.heavyCleaning}
-        Each Additional Room: ${this.state.userData.heavyCleaning_eachAdditionalRoom}
-        Each Additional Large Room: ${this.state.userData.heavyCleaning_eachAdditionalLargeRoom}
+      Heavy Cleaning
+      Heavy Cleaning (3 rooms): ${this.state.userData.heavyCleaning}
+      Each Additional Room: ${this.state.userData.heavyCleaning_eachAdditionalRoom}
+      Each Additional Large Room: ${this.state.userData.heavyCleaning_eachAdditionalLargeRoom}
 
-        Deep Cleaning
-        Any Size Room (RX-20): ${this.state.userData.anySizeRoom}
+      Deep Cleaning
+      Any Size Room (RX-20): ${this.state.userData.anySizeRoom}
 
-        Quote Cost: 
+      Quote Cost: ${this.calculateQuote}
       `;
   } // formulateEmailBody()
 }
