@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ReCAPTCHA from "react-google-recaptcha";
 import QuoteFormRow from './QuoteFormRow';
 import './Quote.css';
 
@@ -22,7 +23,8 @@ class Quote extends Component {
           heavyCleaning_eachAdditionalLargeRoom: "0",
         anySizeRoom: "0",
         comment: "",
-        emailMessage: ""
+        emailMessage: "",
+        googleResponse: ""
       }, // userData
       colBasic: {
         formUsable: false
@@ -425,11 +427,23 @@ class Quote extends Component {
                   </div>
                 </div>
               </div>{/* .row */}
+
+              <div className="row">
+                <div className="col-sm-8 col-sm-offset-2">
+                <ReCAPTCHA
+                  ref="recaptcha"
+                  sitekey="6Lcn0gMTAAAAAO1xOhqW-qTcYUPtUZ24FggL30Xt"
+                  onChange={this.recaptchaOnChange}
+                />
+                </div>
+              </div>{/* .row */}
+
               <div id="validation-error" className="row" style={{display: "none"}}>
                 <div className="col-sm-8 col-sm-offset-2">
                   <div className="alert alert-danger text-center">Please check First &amp; Last Name, Email, or Phone.</div>
                 </div>
               </div>{/* .row */}
+
               <div className="row">
                 <div className="col-md-12 text-center">
                   <input type="submit" value="send message" className="btn btn-transparent-dark-gray btn-large margin-20px-top" />
@@ -501,7 +515,7 @@ class Quote extends Component {
   calculateQuote = () => {
     let totalCost = 0;
 
-    // TODO: Calculate Basic Cleaning
+    // Calculate Basic Cleaning
     if (this.state.userData.basicCleaning_threeRoomsAndHallways === true) totalCost += 80;
     totalCost += 25 * parseInt(this.state.userData.basicCleaning_eachBedroomAfter3);
     totalCost += 50 * parseInt(this.state.userData.basicCleaning_largeRooms);
@@ -509,7 +523,7 @@ class Quote extends Component {
     totalCost += 2 * parseInt(this.state.userData.basicCleaning_staircase);
     totalCost += 25 * parseInt(this.state.userData.basicCleaning_areaRug);
 
-    // TODO: Calculate Heavy Cleaning
+    // Calculate Heavy Cleaning
     if (this.state.userData.heavyCleaning === true) totalCost += 25;
     totalCost += 5 * parseInt(this.state.userData.heavyCleaning_eachAdditionalRoom);
     totalCost += 15 * parseInt(this.state.userData.heavyCleaning_eachAdditionalLargeRoom);
@@ -519,7 +533,14 @@ class Quote extends Component {
     
     // Return total.
     return totalCost;
-  }
+  } // calculateQuote()
+
+  /**
+   * Responds to reCAPTCHA changes.
+   */
+  recaptchaOnChange = (value) => {
+    this.state.userData.googleResponse = value;
+  } // recaptchaOnChange(value)
 
   /**
    * Create the body of the email. This includes the quote from the customer.
@@ -533,7 +554,7 @@ class Quote extends Component {
 
       Message: ${this.state.userData.comment}
 
-      Basic Cleaning
+      <h2>Basic Cleaning</h2>
       3 Rooms & Hallways: ${this.state.userData.basicCleaning_threeRoomsAndHallways}
       Each Bed Room After Three (any size): ${this.state.userData.basicCleaning_eachBedroomAfter3}
       Living / Dining / Family / Loft (large rooms): ${this.state.userData.basicCleaning_largeRooms}
@@ -541,15 +562,18 @@ class Quote extends Component {
       Staircase: ${this.state.userData.basicCleaning_staircase}
       Area Rug: ${this.state.userData.basicCleaning_areaRug}
 
-      Heavy Cleaning
+      <h2>Heavy Cleaning</h2>
       Heavy Cleaning (3 rooms): ${this.state.userData.heavyCleaning}
       Each Additional Room: ${this.state.userData.heavyCleaning_eachAdditionalRoom}
       Each Additional Large Room: ${this.state.userData.heavyCleaning_eachAdditionalLargeRoom}
 
-      Deep Cleaning
+      <h2>Deep Cleaning</h2>
       Any Size Room (RX-20): ${this.state.userData.anySizeRoom}
 
       Quote Cost: $${this.calculateQuote()}
+
+      ----------------------------------------
+      Developed by <a href="https://duaneleem.com">Duane Leem, MSc, PMP</a>
       `;
   } // formulateEmailBody()
 }
