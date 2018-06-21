@@ -5,8 +5,8 @@ import Formsy from 'formsy-react';
 import ReCAPTCHA from "react-google-recaptcha";
 
 // Orta Brothers UI Components
-import ObInput from "../../components/UI/Input/ObInput";
-import ObTextArea from "../../components/UI/Input/ObTextArea";
+import ObInput from "../../components/UI/Formsy/ObInput";
+import ObTextArea from "../../components/UI/Formsy/ObTextArea";
 
 class Contact extends Component {
   render() {

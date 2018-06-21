@@ -1,209 +1,631 @@
-//import React from "react";
 import React, { Component } from 'react';
-import QuoteFormRow from './QuoteFormRow';
+import ReCAPTCHA from "react-google-recaptcha";
 import './Quote.css';
 
 class Quote extends Component {
-  state = {
-    colBasic: {
-      formUsable: false
-    },
-    colHeavy: {
-      formUsable: false
-    }
-  }
-  checkboxClickedBasicHandler = (evt) => {
-    const doesShow = this.state.colBasic.formUsable;
-    let colBasic = {
-      formUsable: !doesShow
-    }
-    
-    this.setState({colBasic: colBasic});
-  }
+  isTest = false;
+  
+  constructor(props) {
+    super(props);
 
-  checkboxClickedHeavyHandler = () => {
-    const doesShow = this.state.colHeavy.formUsable;
-    let colHeavy = {
-      formUsable: !doesShow
-    }
-    
-    this.setState({colHeavy: colHeavy});
-  }
+    this.state = {
+      userData: {
+        name: "",
+        email: "",
+        phone: "",
+        basicCleaning_threeRoomsAndHallways: false,
+          basicCleaning_eachBedroomAfter3: "0",
+          basicCleaning_largeRooms: "0",
+          basicCleaning_masterBedroomsAndBath: "0",
+          basicCleaning_staircase: "0",
+          basicCleaning_areaRug: "0",
+        heavyCleaning: false,
+          heavyCleaning_eachAdditionalRoom: "0",
+          heavyCleaning_eachAdditionalLargeRoom: "0",
+        anySizeRoom: "0",
+        comment: "",
+        emailMessage: "",
+        googleResponse: ""
+      }, // userData
+      isSubmitDisabled: true
+    }; // state
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  } // constructor(props)
+
   render() {
     return (
-    <div>
-      {/* start page title section */}
-      <section className="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
-        <div className="container">
-          <div className="row equalize xs-equalize-auto">
-            <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12 display-table">
-            <div className="display-table-cell vertical-align-middle text-left xs-text-center">
-              {/* start page title */}
-              <h1 className="alt-font text-extra-dark-gray font-weight-600 no-margin-bottom text-uppercase">Request a Quote</h1>
-              {/* end page title */}
-            </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 display-table text-right xs-text-left xs-margin-10px-top">
-            <div className="display-table-cell vertical-align-middle breadcrumb text-small alt-font">
-              {/* start breadcrumb */}
-              <ul className="xs-text-center">
-                <li><a href="/" className="text-dark-gray"><i className="fa fa-home"></i></a></li>
-                <li><a href="/contact" className="text-dark-gray">Contact Us</a></li>
-                <li className="text-dark-gray">Request a Quote</li>
-              </ul>
-              {/* end breadcrumb */}
-            </div>
+      <div>
+        {/* start page title section */}
+        <section className="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
+          <div className="container">
+            <div className="row equalize xs-equalize-auto">
+              <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12 display-table">
+                <div className="display-table-cell vertical-align-middle text-left xs-text-center">
+                  {/* start page title */}
+                  <h1 className="alt-font text-extra-dark-gray font-weight-600 no-margin-bottom text-uppercase">Request a Quote</h1>
+                  {/* end page title */}
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 display-table text-right xs-text-left xs-margin-10px-top">
+                <div className="display-table-cell vertical-align-middle breadcrumb text-small alt-font">
+                  {/* start breadcrumb */}
+                  <ul className="xs-text-center">
+                    <li><a href="/" className="text-dark-gray"><i className="fa fa-home"></i></a></li>
+                    <li><a href="/contact" className="text-dark-gray">Contact Us</a></li>
+                    <li className="text-dark-gray">Request a Quote</li>
+                  </ul>
+                  {/* end breadcrumb */}
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-      {/* end page title section */}
+        </section>
+        {/* end page title section */}
 
-      {/* start feature box section */}
-      <section className="wow fadeIn">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-7 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
-              <h5 className="alt-font text-extra-dark-gray font-weight-600">Please fill out the form below.</h5>
-              <div className="alt-font text-medium-gray margin-10px-bottom text-uppercase text-small">
-              By letting us know the services you need, we can determine a more accurate quote for you. ~ Orta Brothers
+        {/* start feature box section */}
+        <section className="wow fadeIn">
+          <form onSubmit={this.handleSubmit}>
+            <div className="container">
+              <div className="row">
+                <div className="col-lg-7 col-md-6 col-sm-8 col-xs-12 center-col margin-eight-bottom sm-margin-40px-bottom xs-margin-30px-bottom text-center">
+                  <h5 className="alt-font text-extra-dark-gray font-weight-600">Please fill out the form below.</h5>
+                  <div className="alt-font text-medium-gray margin-10px-bottom text-uppercase text-small">
+                    By letting us know the services you need, we can determine a more accurate quote for you. ~ Orta Brothers
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          {/* start User Input Fields */}
-          <div className="row">
-            <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom xs-text-center wow fadeInUp">
-              <div className="col-md-3 col-sm-4 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
-                <i className="glyphicon glyphicon-user text-medium-gray icon-extra-medium top-20"></i>
-              </div>
-              <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
-                <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">First &amp; Last Name</span>
-                <input className="input-bg" required="required" name="full_name" type="text" />
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom xs-text-center wow fadeInUp">
-              <div className="col-md-3 col-sm-4 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
-                <i className="glyphicon glyphicon-envelope text-medium-gray icon-extra-medium top-20"></i>
-              </div>
-              <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
-                <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">E-mail</span>
-                <input className="input-bg" required="required" name="email" type="text" />
-              </div>
-            </div>
-            <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom xs-text-center wow fadeInUp">
-              <div className="col-md-3 col-sm-4 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
-                <i className="glyphicon glyphicon-earphone text-medium-gray icon-extra-medium top-20"></i>
-              </div>
-              <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
-                <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">Phone Number</span>
-                <input className="input-bg" required="required" name="phone_number" type="text" />
-              </div>
-            </div>
-          </div>
-          <hr className="margin-30px-bottom" />
-          <div className="row margin-20px-top">
-            {/* start feature box item */}
-            <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
-              <div className="inner border-all border-width-1 border-color-medium-gray padding-10px-all">
-                <div className="alt-font margin-5px-bottom display-block font-weight-600 text-center margin-20px-bottom text-uppercase text-black">Basic Cleaning</div>
-                <p className="width-95 sm-width-100">
-                  Regular Carpet Cleaning with our hot water extraction wand tool. This service is recommended for regular scheduled maintenance. Every six month to a year.
-                </p>
-                <div className="bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
-                <ul className="list-style-11">
-                  <li className="alt-font font-weight-600">Description</li>
-                  <li>
-                    <QuoteFormRow type="checkbox" click={this.checkboxClickedBasicHandler} name="3RoomsAndHallways" text1="3 Rooms &amp; Hallways" text2="(no charge for hallways)" />
-                  </li>
-                  <li>
-                    <QuoteFormRow type="select" name="eachBedroomAfter3" text1="Each Bed Room After Three" text2="(any size)" isEnabled={this.state.colBasic.formUsable} />
-                  </li>
-                  <li>
-                    <QuoteFormRow type="select" name="largeRooms" text1="Living / Dining / Family / Loft" text2="(large rooms)" isEnabled={this.state.colBasic.formUsable} />
-                  </li>
-                  <li>
-                    <QuoteFormRow type="select" name="masterBedroomsAndBath" text1="Master Bedrooms with Bath" text2="&nbsp;" isEnabled={this.state.colBasic.formUsable} />
-                  </li>
-                  <li>
-                    <QuoteFormRow type="select" name="staircase" text1="Staircase" text2="(per step)" isEnabled={this.state.colBasic.formUsable} />
-                  </li>
-                  <li>
-                    <QuoteFormRow type="select" name="areaRug" text1="Area Rug" text2="(per rug)" isEnabled={this.state.colBasic.formUsable} />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* start feature box item */}
-            <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center ">
-              <div className="inner border-all border-width-1 border-color-medium-gray padding-10px-all">
-                <div className="alt-font margin-5px-bottom display-block font-weight-600 text-center margin-20px-bottom text-uppercase text-black">Heavy Cleaning</div>
-                <p className="width-95 sm-width-100">
-                  Extra detergent for heavy traffic soiling in carpet. Agitating with brush and requiring a second pre-spray. This service is recommended for carpet that has not been clean for over one year.
-                </p>
-                <p className="text-danger">
-                  * Price below is an additional charge to the basic cleaning prices
-                </p>
-                <div className="bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
-                <ul className="list-style-11">
-                  <li className="alt-font font-weight-600">Description</li>
-                  <li>
-                    <QuoteFormRow type="checkbox" click={this.checkboxClickedHeavyHandler} name="HC3rooms" text1="Heavy Cleaning" text2="(3 rooms)" />
-                  </li>
-                  <li>
-                    <QuoteFormRow type="select" name="HCAddRoom" text1="Each Additional Room" text2="&nbsp;" isEnabled={this.state.colHeavy.formUsable} />
-                  </li>
-                  <li>
-                    <QuoteFormRow type="select" name="HCAddLargeRoom" text1="Each Additional Large Room" text2="&nbsp;" isEnabled={this.state.colHeavy.formUsable} />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* end feature box item */}
-            {/* start feature box item */}
-            <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
-              <div className="inner border-all border-width-1 border-color-medium-gray padding-10px-all">
-                <div className="alt-font margin-5px-bottom display-block font-weight-600 text-center margin-20px-bottom text-uppercase text-black">Deep Cleaning</div>
-                <p className="width-95 sm-width-100">
-                  Everything in Heavy Clean plus using our RX-20 Restoration Machine in an attempt to restore carpet that would otherwise be replaced. This service is recommended for carpet that has never been cleaned or given regular maintenance.
-                </p>
-                <p className="text-danger">
-                  * Price below is an additional charge to the basic cleaning prices
-                </p>
-                <div className="bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
-                <ul className="list-style-11">
-                  <li className="alt-font font-weight-600">Description</li>
-                  <li>
-                    <QuoteFormRow type="select" name="DCAnySizeRoom" text1="Any Size Room" text2="(RX-20) Each" isEnabled={this.state.colHeavy.formUsable} />
-                  </li>
-                </ul>
-              </div>
-            </div>
-            {/* end feature box item */}
-          </div>
-          <hr className="margin-30px-top margin-30px-bottom" />
-          <div className="row">
-            <div className="col-sm-8 col-sm-offset-2">
-              <div class="col-md-1 col-sm-2 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
-                <i class="glyphicon glyphicon-comment text-medium-gray icon-extra-medium top-20"></i>
-              </div>
-              <div class="col-md-11 col-sm-10 col-xs-12 no-padding">
-                <span class="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">Have a question? Please let us know!</span>
-                <textarea name="comment" id="comment" placeholder="" rows="6" className="big-textarea input-bg"></textarea>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-md-12 text-center">
-              <button id="project-contact-us-button" type="submit" className="btn btn-transparent-dark-gray btn-large margin-20px-top">send message</button>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* end feature box section */}
+              {/* start User Input Fields */}
+              <div className="row">
+                <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom xs-text-center wow fadeInUp">
+                  <div className="col-md-3 col-sm-4 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
+                    <i className="glyphicon glyphicon-user text-medium-gray icon-extra-medium top-20"></i>
+                  </div>
+                  <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
+                    <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">First &amp; Last Name</span>
+                    <input className="input-bg" required="required"
+                      name="name"
+                      type="text"
+                      value={this.state.userData.name}
+                      onChange={this.handleInputChange} />
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom xs-text-center wow fadeInUp">
+                  <div className="col-md-3 col-sm-4 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
+                    <i className="glyphicon glyphicon-envelope text-medium-gray icon-extra-medium top-20"></i>
+                  </div>
+                  <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
+                    <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">E-mail</span>
+                    <input className="input-bg" required="required"
+                      name="email"
+                      type="email"
+                      value={this.state.userData.email}
+                      onChange={this.handleInputChange} />
+                  </div>
+                </div>
+                <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-15px-bottom xs-text-center wow fadeInUp">
+                  <div className="col-md-3 col-sm-4 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
+                    <i className="glyphicon glyphicon-earphone text-medium-gray icon-extra-medium top-20"></i>
+                  </div>
+                  <div className="col-md-9 col-sm-8 col-xs-12 no-padding">
+                    <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">Phone Number</span>
+                    <input className="input-bg" required="required"
+                      name="phone"
+                      type="tel"
+                      value={this.state.userData.phone}
+                      onChange={this.handleInputChange} />
+                  </div>
+                </div>
+              </div>{/* .row */}
 
-    </div>
+              <hr className="margin-30px-bottom" />
+
+              <div className="row margin-20px-top">
+                {/* start feature box item */}
+                <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
+                  <div className="inner border-all border-width-1 border-color-medium-gray padding-10px-all">
+                    <div className="alt-font margin-5px-bottom display-block font-weight-600 text-center margin-20px-bottom text-uppercase text-black">Basic Cleaning</div>
+                    <p className="width-95 sm-width-100">
+                      Regular Carpet Cleaning with our hot water extraction wand tool. This service is recommended for regular scheduled maintenance. Every six month to a year.
+                    </p>
+                    <div className="bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
+                    <ul className="list-style-11">
+                      <li className="alt-font font-weight-600">Description</li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label htmlFor="basicCleaning_threeRoomsAndHallways">3 Rooms &amp; Hallways<br /><small>(no charge for hallways)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <input
+                              name="basicCleaning_threeRoomsAndHallways"
+                              type="checkbox"
+                              checked={this.state.userData.basicCleaning_threeRoomsAndHallways}
+                              onChange={this.handleInputChange} />
+                          </div>{/* gFormCellElement */}
+                        </div>
+                      </li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Each Bed Room After Three<br/><small>(any size)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_eachBedroomAfter3"
+                              value={ this.state.userData.basicCleaning_eachBedroomAfter3 }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Living / Dining / Family / Loft<br/><small>(large rooms)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_largeRooms"
+                              value={ this.state.userData.basicCleaning_largeRooms }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Master Bedrooms with Bath<br/><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_masterBedroomsAndBath"
+                              value={ this.state.userData.basicCleaning_masterBedroomsAndBath }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Staircase<br/><small>(per step)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_staircase"
+                              value={ this.state.userData.basicCleaning_staircase }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Area Rug<br/><small>(per rug)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.basicCleaning_threeRoomsAndHallways } 
+                              name="basicCleaning_areaRug"
+                              value={ this.state.userData.basicCleaning_areaRug }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {/* start feature box item */}
+                <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center ">
+                  <div className="inner border-all border-width-1 border-color-medium-gray padding-10px-all">
+                    <div className="alt-font margin-5px-bottom display-block font-weight-600 text-center margin-20px-bottom text-uppercase text-black">Heavy Cleaning</div>
+                    <p className="width-95 sm-width-100">
+                      Extra detergent for heavy traffic soiling in carpet. Agitating with brush and requiring a second pre-spray. This service is recommended for carpet that has not been clean for over one year.
+                    </p>
+                    <p className="text-danger">
+                      * Price below is an additional charge to the basic cleaning prices
+                    </p>
+                    <div className="bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
+                    <ul className="list-style-11">
+                      <li className="alt-font font-weight-600">Description</li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label htmlFor="heavyCleaning">Heavy Cleaning<br /><small>(3 rooms)</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <input
+                              name="heavyCleaning"
+                              type="checkbox"
+                              checked={this.state.userData.heavyCleaning}
+                              onChange={this.handleInputChange} />
+                          </div>{/* gFormCellElement */}
+                        </div>
+                      </li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Each Additional Room<br/><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.heavyCleaning } 
+                              name="heavyCleaning_eachAdditionalRoom"
+                              value={ this.state.userData.heavyCleaning_eachAdditionalRoom }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Each Additional Large Room<br/><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.heavyCleaning } 
+                              name="heavyCleaning_eachAdditionalLargeRoom"
+                              value={ this.state.userData.heavyCleaning_eachAdditionalLargeRoom }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {/* end feature box item */}
+                {/* start feature box item */}
+                <div className="col-md-4 col-sm-4 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
+                  <div className="inner border-all border-width-1 border-color-medium-gray padding-10px-all">
+                    <div className="alt-font margin-5px-bottom display-block font-weight-600 text-center margin-20px-bottom text-uppercase text-black">Deep Cleaning</div>
+                    <p className="width-95 sm-width-100">
+                      Everything in Heavy Clean plus using our RX-20 Restoration Machine in an attempt to restore carpet that would otherwise be replaced. This service is recommended for carpet that has never been cleaned or given regular maintenance.
+                    </p>
+                    <p className="text-danger">
+                      * Price below is an additional charge to the basic cleaning prices
+                    </p>
+                    <div className="bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
+                    <ul className="list-style-11">
+                      <li className="alt-font font-weight-600">Description</li>
+                      <li>
+                        <div className="gFormRow">
+                          <div className="gFormCellText">
+                            <label>Any Size Room (RX-20) Each<br /><small>&nbsp;</small></label>
+                          </div>
+                          <div className="gFormCellElement">
+                            <select 
+                              disabled={ !this.state.userData.heavyCleaning } 
+                              name="anySizeRoom"
+                              value={ this.state.userData.anySizeRoom }
+                              onChange={ this.handleInputChange } >
+                              <option value="0">0</option>
+                              <option value="1">1</option>
+                              <option value="2">2</option>
+                              <option value="3">3</option>
+                              <option value="4">4</option>
+                              <option value="5">5</option>
+                              <option value="6">6</option>
+                              <option value="7">7</option>
+                              <option value="8">8</option>
+                              <option value="9">9</option>
+                              <option value="10">10</option>
+                            </select>
+                          </div>{/* .gFormCellElement */}
+                        </div>{/* .gFormRow */}
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                {/* end feature box item */}
+              </div>
+              <hr className="margin-30px-top margin-30px-bottom" />
+              <div className="row">
+                <div className="col-sm-8 col-sm-offset-2">
+                  <div className="col-md-1 col-sm-2 text-right col-xs-12 no-padding-left xs-no-padding-lr pull-left xs-margin-15px-bottom">
+                    <i className="glyphicon glyphicon-comment text-medium-gray icon-extra-medium top-20"></i>
+                  </div>
+                  <div className="col-md-11 col-sm-10 col-xs-12 no-padding">
+                    <span className="margin-5px-bottom text-extra-dark-gray alt-font display-block font-weight-600">Have a question? Please let us know!</span>
+                    <textarea rows="6" className="big-textarea input-bg"
+                      name="comment"
+                      value={this.state.userData.message} 
+                      onChange={this.handleInputChange} />
+                  </div>
+                </div>
+              </div>{/* .row */}
+
+              <div id="row-recaptcha" className="row">
+                <div className="col-md-12 text-center">
+                  <ReCAPTCHA
+                    ref="recaptcha"
+                    sitekey="6Lcn0gMTAAAAAO1xOhqW-qTcYUPtUZ24FggL30Xt"
+                    onChange={this.recaptchaOnChange}
+                    style={{display: "inline-block"}}
+                  />
+                </div>
+              </div>{/* .row */}
+
+              {/* Error Indicator */}
+              <div id="validation-error" className="row" style={{display: "none"}}>
+                <div className="col-sm-8 col-sm-offset-2">
+                  <div className="alert alert-danger text-center">Please check First &amp; Last Name, Email, or Phone.</div>
+                </div>
+              </div>{/* .row */}
+
+              {/* Success Indicator */}
+              <div id="message-success" className="row" style={{display: "none"}}>
+                <div className="col-sm-8 col-sm-offset-2">
+                  <div className="alert alert-success text-center">Your quote request has been sent to our team.</div>
+                </div>
+              </div>{/* .row */}
+
+              <div className="row">
+                <div className="col-md-12 text-center">
+                  <input id="quote-submit" type="submit" className="btn btn-transparent-dark-gray btn-large margin-20px-top"
+                    value="send message"
+                    disabled={this.state.isSubmitDisabled} />
+                </div>
+              </div>{/* .row */}
+            </div>{/* .container */}
+          </form>
+        </section>
+        {/* end feature box section */}
+
+      </div>
     );
-  }
+  } // render()
+
+  /**
+   * When the user types anything, state gets updated.
+   * @param {object} event - Contents of form.
+   */
+  handleInputChange(event) {
+    const target = event.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
+
+    // TODO: Toggle submit if should be disabled.
+    if (this.state.userData.name === null) {
+      this.state.isSubmitDisabled = true;
+    } else if (this.state.userData.email === null) {
+      this.state.isSubmitDisabled = true;
+    } else if (this.state.userData.phone === null) {
+      this.state.isSubmitDisabled = true;
+    } else {
+      this.state.isSubmitDisabled = false;
+    } // if
+
+    // Make a new userData state.
+    let newUserData = {
+      ...this.state.userData,
+      [name]: value
     }
+    
+    this.setState({
+      userData: newUserData
+    });
+  } // handleChange(event)
+
+  /**
+   * Sends out the body to the API that handles the email.
+   * @param {object} event - Contents of React stuff like the form in render().
+   */
+  handleSubmit = (event) => {
+    // Check if name, email, and phone were filled out.
+    if (this.state.userData.name === null) {
+      document.getElementById("validation-error").style.display = "block";
+    } else if (this.state.userData.email === null) {
+      document.getElementById("validation-error").style.display = "block";
+    } else if (this.state.userData.phone === null) {
+      document.getElementById("validation-error").style.display = "block";
+    } else {
+      // Output JSON
+      console.log(this.state.userData);
+
+      // Remove error block.
+      document.getElementById("validation-error").style.display = "none";
+
+      // Set state values for email body.
+      this.state.userData.emailMessage = this.formulateEmailBody();
+
+      // Submit to API using this.state.userData
+      fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/ortabrothers/quote" : "https://us-central1-leemtek-secure-forms.cloudfunctions.net/ortabrothers/quote", {
+        method: "post",
+        body: JSON.stringify(this.state.userData), 
+        headers: new Headers({"Content-Type": "application/json"})
+      })
+      .then(response => response.json())
+      .then((jsonResult) => {
+        if(jsonResult.status === "email sent") {
+          // Hide recaptcha and submit button.
+          document.getElementById("row-recaptcha").style.display = "none";
+          document.getElementById("quote-submit").style.display = "none";
+          
+          // Indicate a success message.
+          document.getElementById("validation-error").style.display = "none";
+          document.getElementById("message-success").style.display = "initial";
+        } else if(jsonResult.status === "recaptcha failure") {
+          // Show recaptcha and submit button.
+          document.getElementById("row-recaptcha").style.display = "initial";
+          document.getElementById("quote-submit").style.display = "initial";
+          
+          // A recaptcha error occurred.
+          document.getElementById("validation-error").style.display = "initial";
+          document.getElementById("message-success").style.display = "none";
+        } else {
+          // Show recaptcha and submit button.
+          document.getElementById("row-recaptcha").style.display = "initial";
+          document.getElementById("quote-submit").style.display = "initial";
+          
+          // A recaptcha error occurred.
+          document.getElementById("validation-error").style.display = "initial";
+          document.getElementById("message-success").style.display = "none";
+        } // if(jsonResult.status === "email sent")
+      }); // .then((jsonResult)
+
+      // Remove submit button if successful.
+    } // if
+    
+    // Prevent page refresh.
+    event.preventDefault();
+  } // handleSubmit(event)
+
+  /**
+   * Calculate the cost of the quote.
+   * @returns {string} Total quote.
+   */
+  calculateQuote = () => {
+    let totalCost = 0;
+
+    // Calculate Basic Cleaning
+    if (this.state.userData.basicCleaning_threeRoomsAndHallways === true) totalCost += 80;
+    totalCost += 25 * parseInt(this.state.userData.basicCleaning_eachBedroomAfter3);
+    totalCost += 50 * parseInt(this.state.userData.basicCleaning_largeRooms);
+    totalCost += 50 * parseInt(this.state.userData.basicCleaning_masterBedroomsAndBath);
+    totalCost += 2 * parseInt(this.state.userData.basicCleaning_staircase);
+    totalCost += 25 * parseInt(this.state.userData.basicCleaning_areaRug);
+
+    // Calculate Heavy Cleaning
+    if (this.state.userData.heavyCleaning === true) totalCost += 25;
+    totalCost += 5 * parseInt(this.state.userData.heavyCleaning_eachAdditionalRoom);
+    totalCost += 15 * parseInt(this.state.userData.heavyCleaning_eachAdditionalLargeRoom);
+
+    // TODO: Calculate Deep Cleaning
+    totalCost += 55 * parseInt(this.state.userData.anySizeRoom);
+    
+    // Return total.
+    return totalCost;
+  } // calculateQuote()
+
+  /**
+   * Responds to reCAPTCHA changes.
+   */
+  recaptchaOnChange = (value) => {
+    this.state.userData.googleResponse = value;
+  } // recaptchaOnChange(value)
+
+  /**
+   * Create the body of the email. This includes the quote from the customer.
+   * @returns {string} Email message body.
+   */
+  formulateEmailBody = () => {
+    return `
+      <div>Full Name: ${this.state.userData.name}</div>
+      <div>Phone: ${this.state.userData.phone}</div>
+      <div>Email: ${this.state.userData.email}</div>
+      
+      <div>Message: ${this.state.userData.comment}</div>
+
+      <h2>Basic Cleaning</h2>
+      <div>3 Rooms & Hallways: ${this.state.userData.basicCleaning_threeRoomsAndHallways}</div>
+      <div>Each Bed Room After Three (any size): ${this.state.userData.basicCleaning_eachBedroomAfter3}</div>
+      <div>Living / Dining / Family / Loft (large rooms): ${this.state.userData.basicCleaning_largeRooms}</div>
+      <div>Master Bedrooms with Bath: ${this.state.userData.basicCleaning_masterBedroomsAndBath}</div>
+      <div>Staircase: ${this.state.userData.basicCleaning_staircase}</div>
+      <div>Area Rug: ${this.state.userData.basicCleaning_areaRug}</div>
+
+      <h2>Heavy Cleaning</h2>
+      <div>Heavy Cleaning (3 rooms): ${this.state.userData.heavyCleaning}</div>
+      <div>Each Additional Room: ${this.state.userData.heavyCleaning_eachAdditionalRoom}</div>
+      <div>Each Additional Large Room: ${this.state.userData.heavyCleaning_eachAdditionalLargeRoom}</div>
+
+      <h2>Deep Cleaning</h2>
+      <div>Any Size Room (RX-20): ${this.state.userData.anySizeRoom}</div>
+
+      <div style="padding-top: 20px;">Quote Cost: $${this.calculateQuote()}</div>
+
+      <div style="padding-top: 20px;">----------------------------------------</div>
+      <div>Developed by <a href="https://duaneleem.com">Duane Leem, MSc, PMP</a></div>
+      `;
+  } // formulateEmailBody()
+}
 
 export default Quote;
