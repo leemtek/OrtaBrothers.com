@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import ReCAPTCHA from "react-google-recaptcha";
-import QuoteFormRow from './QuoteFormRow';
 import './Quote.css';
 
 class Quote extends Component {
+  isTest = false;
+  
   constructor(props) {
     super(props);
 
     this.state = {
       userData: {
-        name: "Duane Leem",
-        email: "duane@leemtek.com",
-        phone: "925-526-5229",
+        name: "",
+        email: "",
+        phone: "",
         basicCleaning_threeRoomsAndHallways: false,
           basicCleaning_eachBedroomAfter3: "0",
           basicCleaning_largeRooms: "0",
@@ -26,12 +27,7 @@ class Quote extends Component {
         emailMessage: "",
         googleResponse: ""
       }, // userData
-      colBasic: {
-        formUsable: false
-      }, // colBasic
-      colHeavy: {
-        formUsable: false
-      } // colHeavy
+      isSubmitDisabled: true
     }; // state
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -46,22 +42,22 @@ class Quote extends Component {
           <div className="container">
             <div className="row equalize xs-equalize-auto">
               <div className="col-lg-8 col-md-6 col-sm-6 col-xs-12 display-table">
-              <div className="display-table-cell vertical-align-middle text-left xs-text-center">
-                {/* start page title */}
-                <h1 className="alt-font text-extra-dark-gray font-weight-600 no-margin-bottom text-uppercase">Request a Quote</h1>
-                {/* end page title */}
-              </div>
+                <div className="display-table-cell vertical-align-middle text-left xs-text-center">
+                  {/* start page title */}
+                  <h1 className="alt-font text-extra-dark-gray font-weight-600 no-margin-bottom text-uppercase">Request a Quote</h1>
+                  {/* end page title */}
+                </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12 display-table text-right xs-text-left xs-margin-10px-top">
-              <div className="display-table-cell vertical-align-middle breadcrumb text-small alt-font">
-                {/* start breadcrumb */}
-                <ul className="xs-text-center">
-                  <li><a href="/" className="text-dark-gray"><i className="fa fa-home"></i></a></li>
-                  <li><a href="/contact" className="text-dark-gray">Contact Us</a></li>
-                  <li className="text-dark-gray">Request a Quote</li>
-                </ul>
-                {/* end breadcrumb */}
-              </div>
+                <div className="display-table-cell vertical-align-middle breadcrumb text-small alt-font">
+                  {/* start breadcrumb */}
+                  <ul className="xs-text-center">
+                    <li><a href="/" className="text-dark-gray"><i className="fa fa-home"></i></a></li>
+                    <li><a href="/contact" className="text-dark-gray">Contact Us</a></li>
+                    <li className="text-dark-gray">Request a Quote</li>
+                  </ul>
+                  {/* end breadcrumb */}
+                </div>
               </div>
             </div>
           </div>
@@ -380,11 +376,9 @@ class Quote extends Component {
                     <ul className="list-style-11">
                       <li className="alt-font font-weight-600">Description</li>
                       <li>
-                        <QuoteFormRow type="select" name="DCAnySizeRoom" text1="Any Size Room" text2="(RX-20) Each" isEnabled={this.state.colHeavy.formUsable} />
-
                         <div className="gFormRow">
                           <div className="gFormCellText">
-                            <label>Each Additional Large Room<br/><small>&nbsp;</small></label>
+                            <label>Any Size Room (RX-20) Each<br /><small>&nbsp;</small></label>
                           </div>
                           <div className="gFormCellElement">
                             <select 
@@ -428,25 +422,36 @@ class Quote extends Component {
                 </div>
               </div>{/* .row */}
 
-              <div className="row">
-                <div className="col-sm-8 col-sm-offset-2">
-                <ReCAPTCHA
-                  ref="recaptcha"
-                  sitekey="6Lcn0gMTAAAAAO1xOhqW-qTcYUPtUZ24FggL30Xt"
-                  onChange={this.recaptchaOnChange}
-                />
+              <div id="row-recaptcha" className="row">
+                <div className="col-md-12 text-center">
+                  <ReCAPTCHA
+                    ref="recaptcha"
+                    sitekey="6Lcn0gMTAAAAAO1xOhqW-qTcYUPtUZ24FggL30Xt"
+                    onChange={this.recaptchaOnChange}
+                    style={{display: "inline-block"}}
+                  />
                 </div>
               </div>{/* .row */}
 
+              {/* Error Indicator */}
               <div id="validation-error" className="row" style={{display: "none"}}>
                 <div className="col-sm-8 col-sm-offset-2">
                   <div className="alert alert-danger text-center">Please check First &amp; Last Name, Email, or Phone.</div>
                 </div>
               </div>{/* .row */}
 
+              {/* Success Indicator */}
+              <div id="message-success" className="row" style={{display: "none"}}>
+                <div className="col-sm-8 col-sm-offset-2">
+                  <div className="alert alert-success text-center">Your quote request has been sent to our team.</div>
+                </div>
+              </div>{/* .row */}
+
               <div className="row">
                 <div className="col-md-12 text-center">
-                  <input type="submit" value="send message" className="btn btn-transparent-dark-gray btn-large margin-20px-top" />
+                  <input id="quote-submit" type="submit" className="btn btn-transparent-dark-gray btn-large margin-20px-top"
+                    value="send message"
+                    disabled={this.state.isSubmitDisabled} />
                 </div>
               </div>{/* .row */}
             </div>{/* .container */}
@@ -466,6 +471,17 @@ class Quote extends Component {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked : target.value;
     const name = target.name;
+
+    // TODO: Toggle submit if should be disabled.
+    if (this.state.userData.name === null) {
+      this.state.isSubmitDisabled = true;
+    } else if (this.state.userData.email === null) {
+      this.state.isSubmitDisabled = true;
+    } else if (this.state.userData.phone === null) {
+      this.state.isSubmitDisabled = true;
+    } else {
+      this.state.isSubmitDisabled = false;
+    } // if
 
     // Make a new userData state.
     let newUserData = {
@@ -497,11 +513,45 @@ class Quote extends Component {
       // Remove error block.
       document.getElementById("validation-error").style.display = "none";
 
-      // 
+      // Set state values for email body.
       this.state.userData.emailMessage = this.formulateEmailBody();
 
-      // TODO: Submit to API using this.state.userData
-      
+      // Submit to API using this.state.userData
+      fetch((this.isTest) ? "http://localhost:5000/leemtek-secure-forms/us-central1/ortabrothers/quote" : "https://us-central1-leemtek-secure-forms.cloudfunctions.net/ortabrothers/quote", {
+        method: "post",
+        body: JSON.stringify(this.state.userData), 
+        headers: new Headers({"Content-Type": "application/json"})
+      })
+      .then(response => response.json())
+      .then((jsonResult) => {
+        if(jsonResult.status === "email sent") {
+          // Hide recaptcha and submit button.
+          document.getElementById("row-recaptcha").style.display = "none";
+          document.getElementById("quote-submit").style.display = "none";
+          
+          // Indicate a success message.
+          document.getElementById("validation-error").style.display = "none";
+          document.getElementById("message-success").style.display = "initial";
+        } else if(jsonResult.status === "recaptcha failure") {
+          // Show recaptcha and submit button.
+          document.getElementById("row-recaptcha").style.display = "initial";
+          document.getElementById("quote-submit").style.display = "initial";
+          
+          // A recaptcha error occurred.
+          document.getElementById("validation-error").style.display = "initial";
+          document.getElementById("message-success").style.display = "none";
+        } else {
+          // Show recaptcha and submit button.
+          document.getElementById("row-recaptcha").style.display = "initial";
+          document.getElementById("quote-submit").style.display = "initial";
+          
+          // A recaptcha error occurred.
+          document.getElementById("validation-error").style.display = "initial";
+          document.getElementById("message-success").style.display = "none";
+        } // if(jsonResult.status === "email sent")
+      }); // .then((jsonResult)
+
+      // Remove submit button if successful.
     } // if
     
     // Prevent page refresh.
@@ -548,32 +598,32 @@ class Quote extends Component {
    */
   formulateEmailBody = () => {
     return `
-      Full Name: ${this.state.userData.name}
-      Phone: ${this.state.userData.phone}
-      Email: ${this.state.userData.email}
-
-      Message: ${this.state.userData.comment}
+      <div>Full Name: ${this.state.userData.name}</div>
+      <div>Phone: ${this.state.userData.phone}</div>
+      <div>Email: ${this.state.userData.email}</div>
+      
+      <div>Message: ${this.state.userData.comment}</div>
 
       <h2>Basic Cleaning</h2>
-      3 Rooms & Hallways: ${this.state.userData.basicCleaning_threeRoomsAndHallways}
-      Each Bed Room After Three (any size): ${this.state.userData.basicCleaning_eachBedroomAfter3}
-      Living / Dining / Family / Loft (large rooms): ${this.state.userData.basicCleaning_largeRooms}
-      Master Bedrooms with Bath: ${this.state.userData.basicCleaning_masterBedroomsAndBath}
-      Staircase: ${this.state.userData.basicCleaning_staircase}
-      Area Rug: ${this.state.userData.basicCleaning_areaRug}
+      <div>3 Rooms & Hallways: ${this.state.userData.basicCleaning_threeRoomsAndHallways}</div>
+      <div>Each Bed Room After Three (any size): ${this.state.userData.basicCleaning_eachBedroomAfter3}</div>
+      <div>Living / Dining / Family / Loft (large rooms): ${this.state.userData.basicCleaning_largeRooms}</div>
+      <div>Master Bedrooms with Bath: ${this.state.userData.basicCleaning_masterBedroomsAndBath}</div>
+      <div>Staircase: ${this.state.userData.basicCleaning_staircase}</div>
+      <div>Area Rug: ${this.state.userData.basicCleaning_areaRug}</div>
 
       <h2>Heavy Cleaning</h2>
-      Heavy Cleaning (3 rooms): ${this.state.userData.heavyCleaning}
-      Each Additional Room: ${this.state.userData.heavyCleaning_eachAdditionalRoom}
-      Each Additional Large Room: ${this.state.userData.heavyCleaning_eachAdditionalLargeRoom}
+      <div>Heavy Cleaning (3 rooms): ${this.state.userData.heavyCleaning}</div>
+      <div>Each Additional Room: ${this.state.userData.heavyCleaning_eachAdditionalRoom}</div>
+      <div>Each Additional Large Room: ${this.state.userData.heavyCleaning_eachAdditionalLargeRoom}</div>
 
       <h2>Deep Cleaning</h2>
-      Any Size Room (RX-20): ${this.state.userData.anySizeRoom}
+      <div>Any Size Room (RX-20): ${this.state.userData.anySizeRoom}</div>
 
-      Quote Cost: $${this.calculateQuote()}
+      <div style="padding-top: 20px;">Quote Cost: $${this.calculateQuote()}</div>
 
-      ----------------------------------------
-      Developed by <a href="https://duaneleem.com">Duane Leem, MSc, PMP</a>
+      <div style="padding-top: 20px;">----------------------------------------</div>
+      <div>Developed by <a href="https://duaneleem.com">Duane Leem, MSc, PMP</a></div>
       `;
   } // formulateEmailBody()
 }
