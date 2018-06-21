@@ -8,9 +8,9 @@ class Quote extends Component {
 
     this.state = {
       userData: {
-        name: "",
-        email: "",
-        phone: "",
+        name: "Duane Leem",
+        email: "duane@leemtek.com",
+        phone: "925-526-5229",
         basicCleaning_threeRoomsAndHallways: false,
           basicCleaning_eachBedroomAfter3: "0",
           basicCleaning_largeRooms: "0",
@@ -20,7 +20,7 @@ class Quote extends Component {
         heavyCleaning: false,
           heavyCleaning_eachAdditionalRoom: "0",
           heavyCleaning_eachAdditionalLargeRoom: "0",
-        anySizeRoom: "",
+        anySizeRoom: "0",
         comment: "",
         emailMessage: ""
       }, // userData
@@ -502,20 +502,23 @@ class Quote extends Component {
     let totalCost = 0;
 
     // TODO: Calculate Basic Cleaning
-    if (this.state.basicCleaning_threeRoomsAndHallways === true) totalCost += 80;
-    totalCost += 25 * parseInt(this.state.basicCleaning_eachBedroomAfter3);
-    totalCost += 50 * parseInt(this.state.basicCleaning_largeRooms);
-    totalCost += 50 * parseInt(this.state.basicCleaning_masterBedroomsAndBath);
-    totalCost += 2 * parseInt(this.state.basicCleaning_staircase);
-    totalCost += 25 * parseInt(this.state.basicCleaning_areaRug);
+    if (this.state.userData.basicCleaning_threeRoomsAndHallways === true) totalCost += 80;
+    totalCost += 25 * parseInt(this.state.userData.basicCleaning_eachBedroomAfter3);
+    totalCost += 50 * parseInt(this.state.userData.basicCleaning_largeRooms);
+    totalCost += 50 * parseInt(this.state.userData.basicCleaning_masterBedroomsAndBath);
+    totalCost += 2 * parseInt(this.state.userData.basicCleaning_staircase);
+    totalCost += 25 * parseInt(this.state.userData.basicCleaning_areaRug);
 
     // TODO: Calculate Heavy Cleaning
-
+    if (this.state.userData.heavyCleaning === true) totalCost += 25;
+    totalCost += 5 * parseInt(this.state.userData.heavyCleaning_eachAdditionalRoom);
+    totalCost += 15 * parseInt(this.state.userData.heavyCleaning_eachAdditionalLargeRoom);
 
     // TODO: Calculate Deep Cleaning
-
+    totalCost += 55 * parseInt(this.state.userData.anySizeRoom);
     
     // Return total.
+    return totalCost;
   }
 
   /**
@@ -526,7 +529,7 @@ class Quote extends Component {
     return `
       Full Name: ${this.state.userData.name}
       Phone: ${this.state.userData.phone}
-      Email: ${this.state.userData.phone}
+      Email: ${this.state.userData.email}
 
       Message: ${this.state.userData.comment}
 
@@ -546,7 +549,7 @@ class Quote extends Component {
       Deep Cleaning
       Any Size Room (RX-20): ${this.state.userData.anySizeRoom}
 
-      Quote Cost: ${this.calculateQuote}
+      Quote Cost: $${this.calculateQuote()}
       `;
   } // formulateEmailBody()
 }
