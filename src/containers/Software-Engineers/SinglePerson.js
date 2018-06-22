@@ -1,41 +1,40 @@
 import React from "react";
+import './SinglePerson.css';
 
 const singlePerson = (props) => {
-  let formElement = null;
-  
-  let disabledText = (props.isEnabled) ? "" : "disabled";
+  let linkFB = null;
+  let linkLI = null;
+  let linkTW = null;
+  let linkPF = null;
 
-  if (props.type === "checkbox") {
-    formElement = (
-      <div>
-        <input className="" onClick={props.click} id={props.name} name={props.name} type={props.type} />
-      </div>
-    );
-  } else if (props.type === "select") {
-    formElement = (
-      <div>
-        <select disabled={disabledText} name={props.name} defaultValue="0"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option></select>
-      </div>
-    );
-  }
-
+  linkFB = (props.socialURL_facebook) ? (<a href={props.socialURL_facebook} className="social rounded fa fa-facebook" target="_blank" />) : "";
+  linkLI = (props.socialURL_linkedin) ? (<a href={props.socialURL_linkedin} className="social rounded fa fa-linkedin" target="_blank" />) : "";
+  linkTW = (props.socialURL_twitter) ? (<a href={props.socialURL_twitter} className="social rounded fa fa-twitter" target="_blank" />) : "";
+  linkPF = (props.socialURL_portfolio) ? (<a href={props.socialURL_portfolio} className="social rounded fa fa-code" target="_blank" />) : "";
 
 
   return (
-    <div>
+    <div className="col-md-3 col-sm-4 ">
       {/* start single person */}
-      <div className="col-sm-3">
         <div className="box-content thumbnail text-center">
           <a class="item-image">
-            <img className="img-responsive" src="{props.imgURL}" alt="{props.name}" />
+            <img className="img-responsive" src={props.imgURL} alt={props.name} />
             <h3>
               <span>{props.name}</span> 
               <br />
-              <small>Project Manager</small>
+              <small>{props.title}</small>
             </h3>
           </a>
+          <div class="caption text-left">
+            <p>
+              {props.children}
+            </p>
+            {linkFB}
+            {linkLI}
+            {linkTW}
+            {linkPF}
+          </div>
         </div>
-      </div>
       {/* end single person */}
     </div>
   );
