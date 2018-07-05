@@ -18,41 +18,72 @@ const obHomeHero = () => {
                           
                           {/* layer nr. 1 */}
                           <div className="tp-caption NotGeneric-SubTitle tp-resizeme " 
-                                data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                                data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" 
-                                data-fontsize="['60','48','38','29']"
-                                data-lineheight="['68','60','50','40']"
-                                data-width="none"
-                                data-height="none"
-                                data-whitespace="nowrap"
-                                data-type="text" 
-                                data-responsive_offset="on" 
-                                data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":600,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:2px 2px 2px 2px;"}]'
-                                data-textalign="['center','center','center','center']"
-                                data-paddingtop="[10,10,10,10]"
-                                data-paddingright="[0,0,0,0]"
-                                data-paddingbottom="[10,10,10,10]"
-                                data-paddingleft="[0,0,0,0]"
-                                style={{ zIndex: 8, whiteSpace: "nowrap", fontFamily: "'Montserrat', sans-serif !important", fontWeight: 600, letterSpacing: "0" }}>Deep Steam Cleaning for<br /> a Cleaner Carpet, A Healthier<br /> Home and A Happier Family</div>
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['-85','-110','-100','-90']" 
+                            data-fontsize="['60','52','50','35']"
+                            data-lineheight="['65','62','60','48']"
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"
+                            data-visibility="['on', 'on', 'on', 'on']"
+                            data-type="button"
+                            data-color="['#FFF']"
+                            data-responsive_offset="on" 
+                            data-responsive="on"
+                            data-frames='[{"from":"y:50px;opacity:0;","speed":1000,"to":"o:1;","delay":300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:2px 2px 2px 2px;"}]'
+                            data-textalign="['center', 'center', 'center', 'center']"
+                            data-paddingtop="[10,10,10,10]"
+                            data-paddingright="[30,30,30,30]"
+                            data-paddingbottom="[10,10,10,10]"
+                            data-paddingleft="[30,30,30,30]"
+                            data-basealign="slide" 
+                            style={{ zIndex: "8", whiteSpace: "nowrap", fontFamily: "'Montserrat', sans-serif !important", fontWeight: "600", letterSpacing: "-1px" }}>
+                                Deep Steam Cleaning
+                          </div>
 
                           {/* layer nr. 2 */}
+                          <div className="tp-caption NotGeneric-Title tp-resizeme" 
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                            data-fontsize="['18','17','16','16']"
+                            data-lineheight="['23','22','22','20']"
+                            data-width="none"
+                            data-height="none"
+                            data-whitespace="nowrap"
+                            data-visibility="['on', 'on', 'on', 'on']"
+                            data-type="text"
+                            data-color="['#FFF']"
+                            data-responsive_offset="on" 
+                            data-responsive="on"
+                            data-frames='[{"from":"y:50px;opacity:0;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bc:rgba(255, 255, 255, 1.00);bw:2px 2px 2px 2px;"}]'
+                            data-textalign="['center', 'center', 'center', 'center']"
+                            data-paddingtop="[10,10,10,10]"
+                            data-paddingright="[30,30,30,30]"
+                            data-paddingbottom="[10,10,10,10]"
+                            data-paddingleft="[30,30,30,30]"
+                            data-basealign="slide" 
+                            style={{ zIndex: "7", whiteSpace: "nowrap", textTransform: "none", fontFamily: "'Montserrat', sans-serif !important", fontWeight: 500, letterSpacing: "2px" }}>
+                                For a cleaner carpet, a healthier home, and a happier family.
+                          </div>
+
+                          {/* layer nr. 3 */}
                           <Link to="/services" className="tp-caption btn btn-transparent-white btn-medium border-radius-4 z-index-5" 
-                              data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
-                              data-y="['middle','middle','middle','middle']" data-voffset="['190','160','145','110']" 
-                              data-fontsize="['17','16','15','14']"
-                              data-whitespace="nowrap"
-                              data-visibility="['on', 'on', 'on', 'on']"
-                              data-type="text"
-                              data-color="['#FFFFFF']"
-                              data-responsive_offset="on" 
-                              data-responsive="on"
-                              data-frames='[{"from":"y:150px;opacity:0;","speed":1500,"to":"o:1;","delay":900,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bc:rgba(255, 255, 255, 1.00);bw:2px 2px 2px 2px;"}]'
-                              data-textalign="['inherit', 'inherit', 'right', 'center']" 
-                              data-paddingtop="[13,12,10,9]"
-                              data-paddingright="[38,35,32,29]"
-                              data-paddingbottom="[13,12,10,9]"
-                              data-paddingleft="[38,35,32,29]"
-                              data-basealign="slide">Explore Work</Link>
+                            data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" 
+                            data-y="['middle','middle','middle','middle']" data-voffset="['90','95','90','80']" 
+                            data-fontsize="['17','16','15','14']"
+                            data-whitespace="nowrap"
+                            data-visibility="['on', 'on', 'on', 'on']"
+                            data-type="text"
+                            data-color="['#FFFFFF']"
+                            data-responsive_offset="on" 
+                            data-responsive="on"
+                            data-frames='[{"from":"y:150px;opacity:0;","speed":1500,"to":"o:1;","delay":900,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[175%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"},{"frame":"hover","speed":"300","ease":"Power1.easeInOut","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0, 0, 0, 1.00);bc:rgba(255, 255, 255, 1.00);bw:2px 2px 2px 2px;"}]'
+                            data-textalign="['inherit', 'inherit', 'right', 'center']" 
+                            data-paddingtop="[13,12,10,9]"
+                            data-paddingright="[38,35,32,29]"
+                            data-paddingbottom="[13,12,10,9]"
+                            data-paddingleft="[38,35,32,29]"
+                            data-basealign="slide">Explore Work</Link>
                       </li>
                       
                       {/* slide 2 */}
