@@ -101,7 +101,7 @@ const obFooter = () => {
               <div className="row">
                   {/* start copyright */}
                   <div className="col-md-6 col-sm-6 col-xs-12 text-left text-small xs-text-center">&copy; 2018 Orta Brothers</div>
-                  <div className="col-md-6 col-sm-6 col-xs-12 text-right text-small xs-text-center">Web Development by <a href="/software-engineers" target="_blank">LeemTek</a></div>
+                  <div className="col-md-6 col-sm-6 col-xs-12 text-right text-small xs-text-center">Web Development by <a href="/software-engineers">Orta Brothers Software Engineers</a></div>
                   {/* end copyright */}
               </div>
           </div>
