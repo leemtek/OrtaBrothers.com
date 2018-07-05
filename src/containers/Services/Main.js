@@ -1,8 +1,35 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 
 const services = () => {
+  let seoAuthor = "Orta Brothers";
+  let seoTitle = "Orta Brothers Carpet Cleaning";
+  let seoDescription = "Orta Brothers is a family owned business, serving residents and commercial clients alike since 2002. Our customers have rated us the 'best carpet cleaning company in town' and our commercial clients have year after year continued to us our efficient no time waiting techniques.";
+
   return (
     <div>
+        <Helmet>
+          <title>{seoTitle} - Orta Brothers</title>
+          <meta name="author" content={seoAuthor} />
+          <meta name="description" content={seoDescription} />
+          <meta name="keywords" content="carpet cleaning, san francisco, east bay, residential, commercial" />
+          <link rel="canonical" href="https://www.ortabrothers.com/software-engineers" />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={seoTitle + " - Orta Brothers"} />
+          <meta property="og:description" content={seoDescription} />
+          <meta property="og:url" content="https://ortabrothers.com/" />
+          <meta property="og:site_name" content="Orta Brothers" />
+          <meta property="og:image" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" />
+          <meta property="og:image:secure_url" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" />
+          <meta property="og:image:width" content="2037" />
+          <meta property="og:image:height" content="1639" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content={seoDescription} />
+          <meta name="twitter:title" content={seoTitle + " - Orta Brothers"} />
+          <meta name="twitter:image" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" />
+        </Helmet>
+        
         {/* start page title section */}
         <section className="wow fadeIn bg-light-gray padding-35px-tb page-title-small top-space">
             <div className="container">
@@ -41,9 +68,9 @@ const services = () => {
                     {/* start feature box item */}
                     <div className="col-md-4 col-sm-4 col-md-push-2 col-sm-push-2 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
                         <div className="margin-ten-bottom overflow-hidden image-hover-style-1 sm-margin-20px-bottom">
-                            <a href="services-modern.html"><img src="https://placehold.it/360x200" alt=""/></a>
+                            <a href="/services/commercial"><img src="https://placehold.it/360x200" alt=""/></a>
                         </div>
-                        <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Commercial Services</a>
+                        <a href="/services/commercial" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Commercial Services</a>
                         <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                         <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                         <a href="/services/commercial" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Commercial Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
@@ -52,9 +79,9 @@ const services = () => {
                     {/* start feature box item */}
                     <div className="col-md-4 col-sm-4 col-md-push-2 col-sm-push-2 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center" data-wow-delay="0.2s">
                         <div className="margin-ten-bottom overflow-hidden image-hover-style-1 sm-margin-20px-bottom">
-                            <a href="services-modern.html"><img src="https://placehold.it/360x200" alt=""/></a>
+                            <a href="/services/residential"><img src="https://placehold.it/360x200" alt=""/></a>
                         </div>
-                        <a href="services-modern.html" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Residential Services</a>
+                        <a href="/services/residential" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Residential Services</a>
                         <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
                         <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                         <a href="/services/residential" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Residential Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>

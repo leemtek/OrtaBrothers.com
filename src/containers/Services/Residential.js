@@ -1,8 +1,35 @@
 import React from "react";
+import {Helmet} from "react-helmet";
 
 const residential = () => {
+  let seoAuthor = "Orta Brothers";
+  let seoTitle = "Residential Carpet Cleaning";
+  let seoDescription = "Orta Brothers is a family owned business, serving residents and commercial clients alike since 2002. Our customers have rated us the 'best carpet cleaning company in town' and our commercial clients have year after year continued to us our efficient no time waiting techniques.";
+
   return (
     <div>
+        <Helmet>
+          <title>{seoTitle} - Orta Brothers</title>
+          <meta name="author" content={seoAuthor} />
+          <meta name="description" content={seoDescription} />
+          <meta name="keywords" content="carpet cleaning, san francisco, east bay, residential, commercial" />
+          <link rel="canonical" href="https://www.ortabrothers.com/software-engineers" />
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content={seoTitle + " - Orta Brothers"} />
+          <meta property="og:description" content={seoDescription} />
+          <meta property="og:url" content="https://ortabrothers.com/" />
+          <meta property="og:site_name" content="Orta Brothers" />
+          <meta property="og:image" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" />
+          <meta property="og:image:secure_url" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" />
+          <meta property="og:image:width" content="2037" />
+          <meta property="og:image:height" content="1639" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:description" content={seoDescription} />
+          <meta name="twitter:title" content={seoTitle + " - Orta Brothers"} />
+          <meta name="twitter:image" content="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-black.jpg" />
+        </Helmet>
+        
         {/* start page title section */}
         <section className="wow fadeIn parallax" data-stellar-background-ratio="0.5" style ={ { backgroundImage: "url('https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/hero-services.jpg')" } }>
             <div className="opacity-medium bg-extra-dark-gray"></div>
