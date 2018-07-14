@@ -43,8 +43,10 @@ class Contact extends Component {
           <div className="container">
               <div className="row sm-equalize-auto">
                   <div className="col-md-12 space-bottom-40 text-center">
-                      <h5 className="alt-font font-weight-700 text-extra-dark-gray text-uppercase">Lorem ipsum dolor sit amet</h5>
-                      <p className="lead">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text.</p>
+                      <h5 className="alt-font font-weight-700 text-extra-dark-gray text-uppercase">Questions? Send Us a Message :)</h5>
+                      <p className="lead">
+                        You can call or send us a direct message through our web form.
+                      </p>
                   </div>
                   <div className="col-md-6 col-sm-12 col-xs-12 sm-margin-30px-bottom wow fadeInLeft">
                       <div className="padding-fifteen-all bg-light-gray border-radius-6 md-padding-seven-all xs-padding-30px-all height-100">
@@ -107,9 +109,9 @@ class Contact extends Component {
                   <div className="col-md-6 col-sm-12 col-xs-12 last-paragraph-no-margin wow fadeInRight">
                       <div className="padding-ten-all bg-light-gray border-radius-6 md-padding-seven-all xs-padding-30px-all height-100 sm-text-center">
                           <img src="images/about-img1.jpg" alt="" className="border-radius-6 margin-35px-bottom xs-margin-30px-bottom" />
-                          <span className="text-large font-weight-600 alt-font text-extra-dark-gray margin-5px-bottom display-block">Lorem ipsum dolor sit amet</span>
-                          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry, Lorem Ipsum has been the standard dummy text.</p>
-                          <a href="about-us-modern.html" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-25px-top">About Company</a>
+                          <span className="text-large font-weight-600 alt-font text-extra-dark-gray margin-5px-bottom display-block">Looking for Carpet Cleaning Quote?</span>
+                          <p>We can provide you a quote by visiting our quote page.</p>
+                          <a href="/contact/quote" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-25px-top">Request a Quote</a>
                       </div>
                   </div>
               </div>
