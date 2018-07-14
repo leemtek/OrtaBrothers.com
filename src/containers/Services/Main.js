@@ -68,10 +68,10 @@ const services = () => {
                     {/* start feature box item */}
                     <div className="col-md-4 col-sm-4 col-md-push-2 col-sm-push-2 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center">
                         <div className="margin-ten-bottom overflow-hidden image-hover-style-1 sm-margin-20px-bottom">
-                            <a href="/services/commercial"><img src="https://placehold.it/360x200" alt=""/></a>
+                            <a href="/services/commercial"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/clean-interior-360x200.jpg" alt="Clean Interior" /></a>
                         </div>
                         <a href="/services/commercial" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Commercial Services</a>
-                        <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p className="width-95 sm-width-100">Whether it’s a large building, restaurant or a boutique shop, our technicians have the experience and tools to provide you with a service beyond your expectations.</p>
                         <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                         <a href="/services/commercial" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Commercial Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                     </div>
@@ -79,10 +79,10 @@ const services = () => {
                     {/* start feature box item */}
                     <div className="col-md-4 col-sm-4 col-md-push-2 col-sm-push-2 col-xs-12 xs-margin-30px-bottom wow fadeInUp last-paragraph-no-margin xs-text-center" data-wow-delay="0.2s">
                         <div className="margin-ten-bottom overflow-hidden image-hover-style-1 sm-margin-20px-bottom">
-                            <a href="/services/residential"><img src="https://placehold.it/360x200" alt=""/></a>
+                            <a href="/services/residential"><img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/orta-brothers-cleaning-rugs-360x200.jpg" alt="Orta Brothers Cleaning Rugs" /></a>
                         </div>
                         <a href="/services/residential" className="alt-font margin-5px-bottom display-block text-extra-dark-gray font-weight-600 text-uppercase text-small">Residential Services</a>
-                        <p className="width-95 sm-width-100">Lorem Ipsum is simply text the printing and typesetting standard industry. Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p className="width-95 sm-width-100">Orta Brothers is a well-known company for our professional, residential carpet cleaning and reputation as the best carpet cleaners in town.</p>
                         <div className="separator-line-horrizontal-full bg-medium-light-gray margin-20px-tb sm-margin-15px-tb"></div>
                         <a href="/services/residential" className="text-uppercase alt-font text-extra-dark-gray font-weight-600 text-extra-small">View Residential Services <i className="fa fa-long-arrow-right margin-5px-left text-deep-pink text-medium position-relative top-2" aria-hidden="true"></i></a>
                     </div>

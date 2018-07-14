@@ -91,7 +91,7 @@ const obHomeHero = () => {
                           <div className="opacity-extra-medium bg-black position-relative z-index-1"></div>
 
                           {/* main image */}
-                          <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/orta-brothers-cleaning-rugs.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" className="rev-slidebg" data-no-retina />
+                          <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/orta-brothers-cleaning-rugs.jpg"  alt="Orta Brothers Cleaning Rugs"  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" className="rev-slidebg" data-no-retina />
                           
                           {/* layer nr. 1 */}
                           <div className="tp-caption NotGeneric-SubTitle tp-resizeme " 

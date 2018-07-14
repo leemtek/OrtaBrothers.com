@@ -71,10 +71,12 @@ const softwareengineers = () => {
           <div className="row">
             <SinglePerson 
               name="Isaiah Orta"
-              title="Project Sponsor"
-              imgURL="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-duaneleem.jpg"
+              title="Chief Executive Officer"
+              imgURL="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/software-engineers-isaiah-orta.jpg"
+              socialURL_linkedin="https://www.linkedin.com/in/isaias-orta-0992b783/"
+              socialURL_portfolio="https://www.ortabrothers.com"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum est sit amet metus varius placerat. Pellentesque posuere accumsan sapien eu sagittis. Suspendisse sagittis metus neque, eu efficitur metus dictum ut. Proin et turpis vitae turpis vehicula cursus. Sed semper erat magna, at scelerisque arcu porttitor at. Vivamus rhoncus hendrerit dolor, quis consectetur velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer auctor varius nunc sed facilisis. Morbi suscipit fringilla nunc, quis lacinia erat condimentum eu.
+              Isaiah is responsible for the the growth, stability, direction and daily operation of Orta Brothers.
             </SinglePerson>
             <SinglePerson 
               name="Duane Leem"
@@ -82,7 +84,7 @@ const softwareengineers = () => {
               imgURL="https://d1xrp9zhb3ks3c.cloudfront.net/web/chateaujudsonville/images/profile-duaneleem.jpg"
               socialURL_facebook="https://www.facebook.com/duaneleem"
               socialURL_linkedin="https://www.linkedin.com/in/duaneleem"
-              socialURL_portfolio="https://www.duaneleem.com/"
+              socialURL_portfolio="https://duaneleem.com/"
             >
               With extensive knowledge in the IT Field and Project Management Duane is able to lead his team to complete quality work and designs for his clients, Duane is a veteran in the field. While using web development to solve problems and in turn creating solutions. Duane is an avid consumer of knowledge while passing his passion to his Children and those around him.
             </SinglePerson>
@@ -108,8 +110,9 @@ const softwareengineers = () => {
               name="Carlo Anthony"
               title="React Engineer"
               imgURL="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/profile-carlo-antonio-antonio-bilbao.jpg"
+              socialURL_linkedin="https://www.linkedin.com/in/carlo-bilbao/"
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fermentum est sit amet metus varius placerat. Pellentesque posuere accumsan sapien eu sagittis. Suspendisse sagittis metus neque, eu efficitur metus dictum ut. Proin et turpis vitae turpis vehicula cursus. Sed semper erat magna, at scelerisque arcu porttitor at. Vivamus rhoncus hendrerit dolor, quis consectetur velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer auctor varius nunc sed facilisis. Morbi suscipit fringilla nunc, quis lacinia erat condimentum eu.
+              I am both a software developer and biotech professional based in the San Francisco Bay Area. I'm passionate about using current and emerging technologies to help solve old problems. Specifically, problems that plague those that are less fortunate, marginalized, or in situations where they are not able to fix their predicament. It’s these problems and the avenues that new technology creates, that motivates me to learn and develop new skills and technologies.
             </SinglePerson>
             <SinglePerson 
               name="Will Carpio"
