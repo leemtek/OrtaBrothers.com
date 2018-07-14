@@ -11,7 +11,7 @@ const obHeader = () => {
               <div className="row">
                 {/* start logo */}
                 <div className="col-md-2 col-xs-5">
-                    <a href="index.html" title="Pofo" className="logo">
+                    <a href="/" className="logo">
                         <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" className="logo-dark" alt="Orta Brothers" />
                         <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" alt="Orta Brothers" className="logo-light default" />
                     </a>

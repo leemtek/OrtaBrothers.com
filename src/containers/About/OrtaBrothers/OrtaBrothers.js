@@ -75,10 +75,17 @@ const ortabrothers = () => {
                     <div className="col-md-6 col-sm-12 text-left sm-margin-30px-bottom sm-padding-80px-lr xs-padding-15px-lr sm-text-center wow fadeIn">
                         <h5 className="alt-font font-weight-700 text-extra-dark-gray text-uppercase width-80 md-width-100">A Brief History</h5>
                         <div className="separator-line-verticle-extra-small bg-extra-dark-gray width-50 sm-width-70 sm-center-col margin-30px-bottom sm-margin-20px-bottom"></div>
-                        <p className="width-95 md-width-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ultrices mattis nulla nec pulvinar. Proin venenatis consectetur turpis. Vestibulum vulputate arcu ipsum, ut aliquam arcu porttitor ac. Suspendisse consequat nulla ac mauris aliquet, viverra viverra urna vehicula. Proin aliquet erat erat, nec pretium augue tempor nec. Phasellus molestie pellentesque commodo. Curabitur faucibus lobortis ipsum, eu interdum tortor pulvinar aliquam. Aliquam ut lectus pulvinar, ullamcorper nibh at, convallis ipsum. Nam quis tincidunt orci. Cras ex quam, commodo id tellus et, ultricies vulputate mauris. Nunc efficitur mi eu dolor commodo, vel vestibulum mi fringilla. Nulla condimentum diam ut turpis hendrerit blandit. Sed tortor sem, auctor eget sollicitudin nec, condimentum mollis dolor. Nulla laoreet fringilla molestie.</p>
+                        <p className="width-95 md-width-100">Orta Brothers is a family owned business, serving residents and commercial clients alike since 2002. Our customers 
+                        have rated us the "best carpet cleaning company in town" and our commercial clients have year after year continued to us our efficient no time waiting 
+                        techniques.<br /><br />
+ 
+                        We strive to ensure our clients' needs are taken care of. We pride ourselves on the quality of our work. Orta Brothers Carpet and Upholstery Cleaning 
+                        is fully insured and bonded, providing liability and property damage coverage as well as employee bonding and all other applicable forms of insurance 
+                        coverage. All employees are screened for your protection. They are neat in appearance and carry proper company identification.</p>
                     </div>
                     <div className="col-md-6 col-sm-6 col-xs-12 wow fadeIn" data-wow-delay="0.4s">
-                        <img src="http://placehold.it/800x811" alt=""/>
+                        <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/golden-gate-bridge-representing-the-bay-area-orta-brothers.jpg" 
+                        alt="Golden Gate Bridge Representing the Bay Area Orta Brothers" />
                     </div>
                 </div>
             </div>
@@ -204,26 +211,17 @@ const ortabrothers = () => {
         {/* end testimonial section */}
 
         {/* start call to action section */}
-        <section className="bg-light-gray wow fadeIn animated animated">
+        <section className="wow fadeIn padding-60px-tb sm-padding-40px-tb bg-deep-pink">
             <div className="container">
-                <div className="row equalize sm-equalize-auto">
-                    <div className="col-md-5 col-sm-12 col-xs-12 text-center sm-margin-30px-bottom wow fadeInLeft">
-                        <div className="display-table width-100 height-100">
-                            <div className="display-table-cell vertical-align-middle width-100 height-100">
-                                <img src="http://placehold.it/900x650" alt="" className="border-radius-6 width-100" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-md-7 col-sm-12 col-xs-12 wow fadeInRight" data-wow-delay="0.2s">
-                        <div className="display-table width-100 height-100">
-                            <div className="display-table-cell vertical-align-middle padding-twelve-lr sm-text-center sm-no-padding width-100">
-                                <span className="text-deep-pink alt-font margin-10px-bottom display-inline-block text-medium">Don’t worry, you’re in safe hands.</span>
-                                <h6 className="alt-font text-extra-dark-gray">We are committed to our customers’ success from start to finish.</h6>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum has been the industry's standard dummy text ever since. Lorem Ipsum is printing and typesetting simply dummy text.</p>
-                                <a href="/services" className="btn btn-dark-gray btn-small text-extra-small btn-rounded margin-5px-top"><i className="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> Our Services</a>
-                            </div>
-                        </div>
-                    </div>
+                <div className="row">
+                    <div className="col-md-12 col-sm-12 center-col position-relative text-center">
+                        <h5 className="alt-font text-white sm-text-center sm-width-70 sm-margin-lr-auto xs-width-100 text-uppercase font-weight-700 sm-no-margin-bottom">Also Ask about</h5>
+                        <span className="text-extra-large text-white alt-font display-inline-block margin-5px-top margin-30px-right xs-no-margin-right xs-no-margin-top xs-margin-15px-bottom xs-width-100">
+                            DEODORIZER, CARPET CARE TIPS, RECOMMENDED CLEANING SCHEDULE
+                        </span><br /><br />
+                        <a href="/Contact/Quote" className="btn btn-large btn-white text-large border-radius-4 md-margin-15px-bottom sm-display-table sm-margin-lr-auto"><i className="fa 
+                        fa-file-text-o icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> Request a quote</a>
+                    </div>                    
                 </div>
             </div>
         </section>
