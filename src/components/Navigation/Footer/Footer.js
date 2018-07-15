@@ -9,7 +9,7 @@ const obFooter = () => {
                     {/* start slogan */}
                     <div className="col-md-4 col-sm-12 col-xs-12 xs-text-center sm-margin-three-bottom xs-margin-20px-bottom display-table">
                         <div className="display-table-cell vertical-align-middle">
-                            <h6 className="text-dark-gray width-70 md-width-100 no-margin-bottom">Favorate Carpet Cleaning In Contra Costa County </h6>
+                            <h6 className="text-dark-gray width-70 md-width-100 no-margin-bottom">Favorite Carpet Cleaning In Contra Costa County </h6>
                         </div>
                     </div>
                     {/* end slogan */}
