@@ -75,7 +75,7 @@ const commercial = () => {
                                 {/* end feature box item */}
                                 {/* start feature box item */}
                                 <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin-six-bottom md-no-padding-right md-margin-30px-bottom xs-margin-30px-bottom xs-no-padding last-paragraph-no-margin">
-                                    <a href="/contact/quote" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i className="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
+                                    <a href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i className="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
                                 </div>
                                 {/* end feature box item */}
                             </div>
@@ -145,7 +145,7 @@ const commercial = () => {
 
                         {/* start service item */}
                         <div className="col-md-4 col-sm-12 col-xs-12 sm-margin-40px-bottom xs-margin-30px-bottom wow fadeInUp">
-                            <a href="/contact/quote" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i className="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
+                            <a href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i className="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
                         </div>
                         {/* end service item */}
 
@@ -170,7 +170,7 @@ const commercial = () => {
                         <div className="display-table-cell vertical-align-middle">
                             <h5 className="alt-font text-extra-dark-gray sm-text-center sm-width-70 sm-margin-lr-auto xs-width-100 text-uppercase font-weight-700 sm-no-margin-bottom">Tile & Grout Cleaning</h5>
                             <p className="width-90 xs-width-100">First, all of the surfaces are cleaned and prepared. Then, our Tile Cleaning and Grout Cleaning solution is sprayed on the surface. Using a high-speed floor machine with a specially formulated grout cleaning attachment, heavily soiled areas are then cleaned. A grout brush is also used to get into those hard to reach areas. After the excess solution is cleaned away, the floor is buffed with a commercial buffer. Finally, a grout sealer is applied which will help maintain that fresh, new look!</p> 
-                            <a href="/contact/quote" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i className="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
+                            <a href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-20px-top"><i className="fa fa-play-circle icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i>Get Started</a>
                         </div>
                     </div>
 

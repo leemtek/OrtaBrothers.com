@@ -111,7 +111,7 @@ class Contact extends Component {
                           <img src="images/about-img1.jpg" alt="" className="border-radius-6 margin-35px-bottom xs-margin-30px-bottom" />
                           <span className="text-large font-weight-600 alt-font text-extra-dark-gray margin-5px-bottom display-block">Looking for Carpet Cleaning Quote?</span>
                           <p>We can provide you a quote by visiting our quote page.</p>
-                          <a href="/contact/quote" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-25px-top">Request a Quote</a>
+                          <a href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" className="btn btn-dark-gray btn-small text-extra-small border-radius-4 margin-25px-top">Request a Quote</a>
                       </div>
                   </div>
               </div>
