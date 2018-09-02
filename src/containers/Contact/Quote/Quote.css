@@ -17,3 +17,7 @@
 .gFormRow .gFormCellText small {
   font-weight: normal;
 }
+
+select {
+  padding: 0px;
+}

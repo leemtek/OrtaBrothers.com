@@ -417,7 +417,8 @@ class Quote extends Component {
                     <textarea rows="6" className="big-textarea input-bg"
                       name="comment"
                       value={this.state.userData.message} 
-                      onChange={this.handleInputChange} />
+                      onChange={this.handleInputChange}
+                      width="100%" />
                   </div>
                 </div>
               </div>{/* .row */}

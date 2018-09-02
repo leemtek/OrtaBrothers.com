@@ -56,7 +56,7 @@ const obHeader = () => {
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
                                     <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/contact">Contact Info</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/contact/quote">Request Quote</a></li>
+                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">Request Quote</a></li>
                                 </ul>
                                 {/* end sub menu */}
                             </li>
