@@ -16,6 +16,11 @@ const obHeader = () => {
                         <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" className="logo-dark" alt="Orta Brothers" />
                         <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" alt="Orta Brothers" className="logo-light default" />
                     </a>
+
+                    <a className="btn btn-primary btn-sm navbar-btn pull-right hidden-md"
+                        href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">
+                        Book Online
+                    </a>
                 </div>
                 {/* end logo */}
                 <div className="col-md-7 col-xs-2 width-auto pull-right accordion-menu xs-no-padding-right">
@@ -25,6 +30,7 @@ const obHeader = () => {
                         <span className="icon-bar"></span>
                         <span className="icon-bar"></span>
                     </button>
+
                     <div className="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1">
                         <ul id="accordion" className="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
                             {/* start menu item */}
@@ -63,9 +69,11 @@ const obHeader = () => {
                             </li>
                         </ul>
 
-                        <button type="button" 
-                            className="btn btn-primary navbar-btn sm-display-none"
-                            style={{marginTop: "16px", marginLeft: "20px"}}>Book Online</button>
+                        <a className="btn btn-primary btn-sm navbar-btn sm-display-none"
+                            style={{marginTop: "16px", marginLeft: "20px"}}
+                            href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">
+                            Book Online
+                        </a>
                     </div>
                 </div>
                 <div className="col-md-2 col-xs-5 width-auto">
