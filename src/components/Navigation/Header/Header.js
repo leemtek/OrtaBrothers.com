@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import '../../../App.css';
+import "./Header.css";
 
 const obHeader = () => {
   return (
@@ -61,21 +62,14 @@ const obHeader = () => {
                                 {/* end sub menu */}
                             </li>
                         </ul>
+
+                        <button type="button" 
+                            className="btn btn-primary navbar-btn sm-display-none"
+                            style={{marginTop: "16px", marginLeft: "20px"}}>Book Online</button>
                     </div>
                 </div>
                 <div className="col-md-2 col-xs-5 width-auto">
-                    <div className="header-searchbar">
-                        <a href="#search-header" className="header-search-form text-white"><i className="fa fa-search search-button"></i></a>
-                        {/* start search input */}
-                        <form id="search-header" method="post" action="search-result.html" name="search-header" className="mfp-hide search-form-result">
-                            <div className="search-form position-relative">
-                                <button type="submit" className="fa fa-search close-search search-button"></button>
-                                <input type="text" name="search" className="search-input" placeholder="Enter your keywords..." autoComplete="off" />
-                            </div>
-                        </form>
-                        {/* end search input */}
-                    </div>
-                    <div className="header-social-icon xs-display-none">
+                    <div className="header-social-icon">
                         <a href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" title="Facebook" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a>
                         <a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" title="LinkedIn" target="_blank"><i className="fa fa-linkedin"></i></a>
                     </div>
@@ -87,5 +81,7 @@ const obHeader = () => {
     </header>
   );
 }
+
+
 
 export default obHeader;
