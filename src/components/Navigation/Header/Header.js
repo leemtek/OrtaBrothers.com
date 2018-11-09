@@ -17,7 +17,7 @@ const obHeader = () => {
                         <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" alt="Orta Brothers" className="logo-light default" />
                     </a>
 
-                    <a className="btn btn-primary btn-sm navbar-btn pull-right hidden-md"
+                    <a className="btn btn-primary btn-sm navbar-btn pull-right hidden-md hidden-lg"
                         href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">
                         Book Online
                     </a>
