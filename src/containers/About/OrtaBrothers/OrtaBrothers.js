@@ -76,7 +76,7 @@ const ortabrothers = () => {
                         <h5 className="alt-font font-weight-700 text-extra-dark-gray text-uppercase width-80 md-width-100">A Brief History</h5>
                         <div className="separator-line-verticle-extra-small bg-extra-dark-gray width-50 sm-width-70 sm-center-col margin-30px-bottom sm-margin-20px-bottom"></div>
                         <p className="width-95 md-width-100">Orta Brothers is a family owned business, serving residents and commercial clients alike since 2002. Our customers 
-                        have rated us the "best carpet cleaning company in town" and our commercial clients have year after year continued to us our efficient no time waiting 
+                        have rated us the "best carpet cleaning company in town" and our commercial clients have year after year continued to use our efficient no time waiting 
                         techniques.<br /><br />
  
                         We strive to ensure our clients' needs are taken care of. We pride ourselves on the quality of our work. Orta Brothers Carpet and Upholstery Cleaning 
