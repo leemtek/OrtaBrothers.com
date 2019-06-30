@@ -18,7 +18,7 @@ const obHeader = () => {
                     </a>
 
                     <a className="btn btn-primary btn-sm navbar-btn pull-right visible-sm"
-                        href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" rel="noopener noreferrer">
+                        href="https://www.yelp.com/biz/orta-brothers-carpet-cleaning-concord-2" target="_blank" rel="noopener noreferrer">
                         Book Online
                     </a>
                 </div>
@@ -65,7 +65,7 @@ const obHeader = () => {
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
                                     <li><a href="/contact">Contact Info</a></li>
-                                    <li><a href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae">Book Online</a></li>
+                                    <li><a href="https://www.yelp.com/biz/orta-brothers-carpet-cleaning-concord-2" target="_blank" rel="noopener noreferrer">Book Online</a></li>
                                 </ul>
                                 {/* end sub menu */}
                             </li>
@@ -73,7 +73,7 @@ const obHeader = () => {
 
                         <a className="btn btn-primary btn-sm navbar-btn sm-display-none"
                             style={{marginTop: "16px", marginLeft: "20px"}}
-                            href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" rel="noopener noreferrer">
+                            href="https://www.yelp.com/biz/orta-brothers-carpet-cleaning-concord-2" target="_blank" rel="noopener noreferrer">
                             Book Online
                         </a>
                     </div>
