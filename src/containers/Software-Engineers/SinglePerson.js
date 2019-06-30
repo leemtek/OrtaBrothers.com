@@ -7,10 +7,10 @@ const singlePerson = (props) => {
   let linkTW = null;
   let linkPF = null;
 
-  linkFB = (props.socialURL_facebook) ? (<a href={props.socialURL_facebook} className="social rounded fa fa-facebook" target="_blank" />) : "";
-  linkLI = (props.socialURL_linkedin) ? (<a href={props.socialURL_linkedin} className="social rounded fa fa-linkedin" target="_blank" />) : "";
-  linkTW = (props.socialURL_twitter) ? (<a href={props.socialURL_twitter} className="social rounded fa fa-twitter" target="_blank" />) : "";
-  linkPF = (props.socialURL_portfolio) ? (<a href={props.socialURL_portfolio} className="social rounded fa fa-code" target="_blank" />) : "";
+  linkFB = (props.socialURL_facebook) ? (<a href={props.socialURL_facebook} className="social rounded fa fa-facebook" target="_blank" rel="noopener noreferrer" />) : "";
+  linkLI = (props.socialURL_linkedin) ? (<a href={props.socialURL_linkedin} className="social rounded fa fa-linkedin" target="_blank" rel="noopener noreferrer" />) : "";
+  linkTW = (props.socialURL_twitter) ? (<a href={props.socialURL_twitter} className="social rounded fa fa-twitter" target="_blank" rel="noopener noreferrer" />) : "";
+  linkPF = (props.socialURL_portfolio) ? (<a href={props.socialURL_portfolio} className="social rounded fa fa-code" target="_blank" rel="noopener noreferrer" />) : "";
 
 
   return (

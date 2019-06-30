@@ -219,7 +219,7 @@ const ortabrothers = () => {
                         <span className="text-extra-large text-white alt-font display-inline-block margin-5px-top margin-30px-right xs-no-margin-right xs-no-margin-top xs-margin-15px-bottom xs-width-100">
                             DEODORIZER, CARPET CARE TIPS, RECOMMENDED CLEANING SCHEDULE
                         </span><br /><br />
-                        <a href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" className="btn btn-large btn-white text-large border-radius-4 md-margin-15px-bottom sm-display-table sm-margin-lr-auto"><i className="fa 
+                        <a href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" rel="noopener noreferrer" className="btn btn-large btn-white text-large border-radius-4 md-margin-15px-bottom sm-display-table sm-margin-lr-auto"><i className="fa 
                         fa-file-text-o icon-very-small margin-5px-right no-margin-left" aria-hidden="true"></i> Request a quote</a>
                     </div>                    
                 </div>

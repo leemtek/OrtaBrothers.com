@@ -17,8 +17,8 @@ const obHeader = () => {
                         <img src="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" data-at2x="https://d1xrp9zhb3ks3c.cloudfront.net/web/ortabrothers/images/2018/logo-white.png" alt="Orta Brothers" className="logo-light default" />
                     </a>
 
-                    <a className="btn btn-primary btn-sm navbar-btn pull-right hidden-md hidden-lg"
-                        href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">
+                    <a className="btn btn-primary btn-sm navbar-btn pull-right visible-sm"
+                        href="https://www.yelp.com/biz/orta-brothers-carpet-cleaning-concord-2" target="_blank" rel="noopener noreferrer">
                         Book Online
                     </a>
                 </div>
@@ -33,9 +33,10 @@ const obHeader = () => {
 
                     <div className="navbar-collapse collapse pull-right" id="navbar-collapse-toggle-1">
                         <ul id="accordion" className="nav navbar-nav navbar-left no-margin alt-font text-normal" data-in="fadeIn" data-out="fadeOut">
+                            
                             {/* start menu item */}
                             <li className="dropdown">
-                                <a href="/">Home</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                <a href="/">Home</a>
                             </li>
                             {/* end menu item */}
 
@@ -43,18 +44,19 @@ const obHeader = () => {
                             <li className="dropdown simple-dropdown"><a href="/services" title="About">Services</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/commercial">Commercial</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/services/residential">Residential</a></li>
+                                    <li><a href="/services/commercial">Commercial</a></li>
+                                    <li><a href="/services/residential">Residential</a></li>
                                 </ul>
                                 {/* end sub menu */}
                             </li>
                             {/* end menu item */}
 
                             <li className="dropdown simple-dropdown"><a href="/about/orta-brothers" title="About">About</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
+                                
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/about/orta-brothers">Orta Brothers</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/about/faqs">FAQs</a></li>
+                                    <li><a href="/about/orta-brothers">Orta Brothers</a></li>
+                                    <li><a href="/about/faqs">FAQs</a></li>
                                 </ul>
                                 {/* end sub menu */}
                             </li>
@@ -62,8 +64,8 @@ const obHeader = () => {
                             <li className="dropdown simple-dropdown"><a href="/contact" title="Contact Us">Contact Us</a><i className="fa fa-angle-down dropdown-toggle" data-toggle="dropdown" aria-hidden="true"></i>
                                 {/* start sub menu */}
                                 <ul className="dropdown-menu" role="menu">
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="/contact">Contact Info</a></li>
-                                    <li className="dropdown"><a className="dropdown-toggle" data-toggle="dropdown" href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">Book Online</a></li>
+                                    <li><a href="/contact">Contact Info</a></li>
+                                    <li><a href="https://www.yelp.com/biz/orta-brothers-carpet-cleaning-concord-2" target="_blank" rel="noopener noreferrer">Book Online</a></li>
                                 </ul>
                                 {/* end sub menu */}
                             </li>
@@ -71,15 +73,15 @@ const obHeader = () => {
 
                         <a className="btn btn-primary btn-sm navbar-btn sm-display-none"
                             style={{marginTop: "16px", marginLeft: "20px"}}
-                            href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">
+                            href="https://www.yelp.com/biz/orta-brothers-carpet-cleaning-concord-2" target="_blank" rel="noopener noreferrer">
                             Book Online
                         </a>
                     </div>
                 </div>
                 <div className="col-md-2 col-xs-5 width-auto">
                     <div className="header-social-icon">
-                        <a href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" title="Facebook" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" title="LinkedIn" target="_blank"><i className="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" title="Facebook" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
                     </div>
                 </div>
               </div>
