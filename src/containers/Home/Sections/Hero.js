@@ -63,7 +63,7 @@ const obHomeHero = () => {
                             data-paddingleft="[30,30,30,30]"
                             data-basealign="slide" 
                             style={{ zIndex: "7", whiteSpace: "nowrap", textTransform: "none", fontFamily: "'Montserrat', sans-serif !important", fontWeight: 500, letterSpacing: "2px" }}>
-                                For a cleaner carpet, a healthier home, and a happier family.
+                                For a cleaner carpet, a healthier home,<br /> and a happier family.
                           </div>
 
                           {/* layer nr. 3 */}

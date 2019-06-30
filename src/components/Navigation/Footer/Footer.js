@@ -31,8 +31,8 @@ const obFooter = () => {
                             <div className="social-icon-style-8">
                                 <ul className="text-extra-small margin-20px-top xs-no-margin-bottom text-uppercase no-padding no-margin-bottom list-style-none">                                    
                                     <li className="display-inline-block margin-10px-right"><a href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" 
-                                    target="_blank" title="Facebook">Facebook</a></li>
-                                    <li className="display-inline-block margin-10px-right"><a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" target="_blank" 
+                                    target="_blank" rel="noopener noreferrer" title="Facebook">Facebook</a></li>
+                                    <li className="display-inline-block margin-10px-right"><a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" target="_blank" rel="noopener noreferrer" 
                                     title="Linkedin">Linkedin</a></li>
                                 </ul>
                             </div>
