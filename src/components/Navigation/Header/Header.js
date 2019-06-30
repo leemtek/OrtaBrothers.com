@@ -18,7 +18,7 @@ const obHeader = () => {
                     </a>
 
                     <a className="btn btn-primary btn-sm navbar-btn pull-right visible-sm"
-                        href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">
+                        href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" rel="noopener noreferrer">
                         Book Online
                     </a>
                 </div>
@@ -73,15 +73,15 @@ const obHeader = () => {
 
                         <a className="btn btn-primary btn-sm navbar-btn sm-display-none"
                             style={{marginTop: "16px", marginLeft: "20px"}}
-                            href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank">
+                            href="https://housecallpro.com/book/Orta-Brothers-Inc/5bc65b2f0284499ab53b2ac217e1cbae" target="_blank" rel="noopener noreferrer">
                             Book Online
                         </a>
                     </div>
                 </div>
                 <div className="col-md-2 col-xs-5 width-auto">
                     <div className="header-social-icon">
-                        <a href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" title="Facebook" target="_blank"><i className="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" title="LinkedIn" target="_blank"><i className="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/pages/Orta-Brothers-Carpet-Cleaning/213766405325647" title="Facebook" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="http://www.linkedin.com/pub/isaias-orta/83/2b7/99" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin"></i></a>
                     </div>
                 </div>
               </div>
